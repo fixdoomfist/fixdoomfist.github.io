@@ -1,0 +1,28 @@
+---
+layout: null
+title: FixDoomfist | Heroes
+---
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="{{'/assets/css/heroes.css' | relative_url}}">
+    </head>
+    <body>
+        <div class="hero-grid">
+            {% for hero in site.data.heroes %}
+            <a href="/heroes/{{hero.name}}" class="hero-card" data-role="{{hero.role}}">
+                <div class="card-text">
+                    <span class="text">{{hero.name}}</span>
+                </div>
+                <div class="hero-image" style="background-image: url('{{hero.portrait}}')"></div>
+                <div class="card-text">
+                    <span class="text">BUGS: {{hero.bug_count}}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </body>
+</html>

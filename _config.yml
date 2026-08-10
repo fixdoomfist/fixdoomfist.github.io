@@ -1,0 +1,9 @@
+collections:
+  heroes:
+    output: true
+    permalink: /heroes/:path/
+  bugs:
+    output: true
+
+sass:
+  silence_deprecations: ["import"]

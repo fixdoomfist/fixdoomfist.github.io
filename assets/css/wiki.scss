@@ -1,0 +1,26 @@
+---
+---
+
+.wiki-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.sidebar-left, .sidebar-right {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+@media (max-width: 900px) {
+  .wiki-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-left, .sidebar-right {
+    position: static;
+  }
+}

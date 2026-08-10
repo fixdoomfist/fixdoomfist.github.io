@@ -1,0 +1,50 @@
+---
+---
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.top-section {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.middle-section {
+  flex: 4;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e0e0e0;
+}
+
+.bottom-section {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d0d0d0;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  text-align: center;
+}
+

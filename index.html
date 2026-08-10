@@ -1,0 +1,46 @@
+---
+layout: null
+title: FixDoomfist
+---
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="{{'/assets/css/stats.css' | relative_url}}">
+    </head>
+    <body>
+        <div class="top-section">
+            <h1>Right now...</h1>
+            <h2>There are {{site.data.stats.bug_count}} bugged interactions</h2>
+            <h2>with {{site.data.stats.unique_bug_count}} total bugs.</h3>
+            <h1>UNFIXED</h1>
+        </div>
+        <div class="middle-section">
+            <div class="item">
+                <h1>Bugs by Heroes</h1>
+            </div>
+            <div class="item">
+                <h1>Bugs by Source</h1>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="item">
+                <h1>Forum Bug Reports</h1>
+            </div>
+            <div class="item">
+                <h1>The Hydra List</h1>
+            </div>
+            <div class="item">
+                <h1>FAQ</h1>
+            </div>
+            <div class="item">
+                <h1>Youtube Playlist</h1>
+            </div>
+            <div class="item">
+                <h1>FixDoomfist Twitter</h1>
+            </div>
+        </div>
+    </body>
+</html>
