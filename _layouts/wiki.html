@@ -2,32 +2,17 @@
 ---
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="{{'/assets/css/wiki.css' | relative_url}}">
-    </head>
-    <body>
-        <div class="wiki-layout">
-            <aside class="sidebar-left">
-                <h4>Contents</h4>
-            </aside>
-
-            <main class="wiki-content">
-                <h1>{{ page.title }}</h1>
-                {{ content }}
-            </main>
-
-            <aside class="sidebar-right">
-                <h4>Related</h4>
-                <ul>
-                    {% for link in page.related %}
-                    <li><a href="{{ link }}">{{ link }}</a></li>
-                    {% endfor %}
-                </ul>
-            </aside>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/wiki.css">
+</head>
+<body>
+    <div class="wiki-box">
+        <div class="heroes-grid">
+            {{ content }}
         </div>
-    </body>
+    </div>
+</body>
 </html>

@@ -7,6 +7,8 @@ heroes:
     - Lifeweaver
     - Mei
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Punch on rising platforms"
 ---
 
 When Doomfist tries to punch on rising platforms, such as Mei's Ice Wall and Lifeweaver's Petal Platform, Rocket Punch does not work most of the time. It either hits seemingly nothing and stops, or goes through the target.

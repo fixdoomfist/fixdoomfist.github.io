@@ -6,6 +6,8 @@ bug_report:
     - https://us.forums.blizzard.com/en/overwatch/t/doomfist-cant-block-frejas-secondary-fire/966237
 heroes: Freja
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Unblockable Freja bolts"
 ---
 
 Since Freja came out, Doomfist has not been able to consistently block Freja bolt explosion damage. This behavior is completely unlike all other “stick” interactions, like Echo bombs or Tracer ultimate. The game blocks the damage based on where exactly Doomfist is hit.

@@ -3,6 +3,8 @@ youtube_link: https://youtu.be/kElUpeX3Yvk
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-be-stunned-shortly-after-canceling-his-punch/991112
 heroes: Doomfist
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Punch cancel late stalemate"
 ---
 
 Doomfist is able to cancel his punch ability by pressing space while keeping the momentum. This “tech” is one of Doomfist’s most core mechanics, used by players of all skill levels. This allows for better map traversal, getting more distance out of an ability, and much more.

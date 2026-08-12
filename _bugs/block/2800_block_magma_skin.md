@@ -4,6 +4,8 @@ bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-magma-titan-
 heroes:
     - Doomfist
 credit: Goose
+last_tested: 12/08/26
+short_name: "Magma skin vfx is too bright"
 ---
 
 When blocking, the usual “block flash” for the Doomfist mythic skin is just way too bright. It hurts the eye and could be extremely harmful towards people with light sensitivity.

@@ -7,19 +7,26 @@ role: "damage"
 portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a55ced3bd597fb08e0fde9dc007f8543ac616ba98ca3db9b0e4d871a8ae17f8.png"
 ---
 
-{{page.title}} {{page.name}}
 
 
-If Doomfist uses Rocket Punch on a stunned enemy, all stun effects will be removed instantly. This does not involve the rooted status effects like Junkrat trap.
+<div class='bug_card'>
+<h2>Punch removes stun</h2>
+<p>If Doomfist uses Rocket Punch on a stunned enemy, all stun effects will be removed instantly. This does not involve the rooted status effects like Junkrat trap.
 
+It is worth noting that, despite the fact that this interaction is exclusive to Doomfist and not a single other stun ability (i.e. Sigma Rock, Mauga Overrun) behaves in the same way, I've been told by The Hydra List authors that this mechanic is intended. I completely disagree and will continue to treat it as a game-breaking bug.</p></div>
 
-Doomfist’s Seismic Slam is consistently not registering damage on targets that are within “gaps” of Mei’s Ice Wall. This can be easily abused.
+<div class='bug_card'>
+<h2>Slam no-regs inside of Ice Wall</h2>
+<p>Doomfist’s Seismic Slam is consistently not registering damage on targets that are within “gaps” of Mei’s Ice Wall. This can be easily abused.</p></div>
 
+<div class='bug_card'>
+<h2>Punch on rising platforms</h2>
+<p>When Doomfist tries to punch on rising platforms, such as Mei's Ice Wall and Lifeweaver's Petal Platform, Rocket Punch does not work most of the time. It either hits seemingly nothing and stops, or goes through the target.</p></div>
 
-When Doomfist tries to punch on rising platforms, such as Mei's Ice Wall and Lifeweaver's Petal Platform, Rocket Punch does not work most of the time. It either hits seemingly nothing and stops, or goes through the target.
+<div class='bug_card'>
+<h2>Slam no-regs on rising platforms</h2>
+<p>Doomfist is unable to hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless you land right in front of the target.</p></div>
 
-
-Doomfist is unable to hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless you land right in front of the target.
-
-
-Sometimes Doomfist’s Rocket Punch goes straight through Mei’s Ice Block. This bug is ping related and quite hard to reproduce.
+<div class='bug_card'>
+<h2>Mei ice block phase-through</h2>
+<p>Sometimes Doomfist’s Rocket Punch goes straight through Mei’s Ice Block. This bug is ping related and quite hard to reproduce.</p></div>

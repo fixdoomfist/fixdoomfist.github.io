@@ -15,6 +15,8 @@ heroes:
     - "Jetpack Cat"
     - Vendetta
 credit: Goose
+last_tested: 12/08/26
+short_name: "Movement abilities override Punch knockback"
 ---
 
 Credit for the Ashe's Coach Gun find is with The Hydra List.

@@ -1,10 +1,10 @@
 ---
 layout: wiki
-title: "Emre"
-permalink: "/heroes/Emre/"
-name: "Emre"
-role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c51e2f698138861c0e3b6cfab3c3ca9d67fd709be175e7c397aa6f2649712a30.png"
+title: "D.Mon"
+permalink: "/heroes/D.Mon/"
+name: "D.Mon"
+role: "tank"
+portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a46c60b8562fdbd0b8308396d0808f7606fba208bc67cccf3f82fe56d2c73b9d.png"
 ---
 
 

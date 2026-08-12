@@ -7,6 +7,8 @@ bug_report:
     - https://us.forums.blizzard.com/en/overwatch/t/doomfist-meteor-strike-camera-bug-cont/1028697
 heroes: Doomfist
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Camera lock on landing in ult"
 ---
 
 If a Doomfist player lands on an “edge” (i.e., the player will immediately start falling once the landing animation is over), the player will be forced to look forward and the camera will be locked in place. It doesn’t matter where the player looked while the landing animation played; when the ultimate ends, the player will be forced to look forward.

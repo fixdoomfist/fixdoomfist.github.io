@@ -15,6 +15,8 @@ heroes:
     - Reinhardt
     - Wuyang
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Inconsistent damage origin"
 ---
 
 The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.

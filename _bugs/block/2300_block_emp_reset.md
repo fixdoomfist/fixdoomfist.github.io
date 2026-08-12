@@ -12,6 +12,8 @@ heroes:
     - Sigma
     - Wuyang
 credit: Goose
+last_tested: 12/08/26
+short_name: "Punch cooldown not resetting"
 ---
 
 Thanks to `itztonii` for providing a fresh clip with the replay code.

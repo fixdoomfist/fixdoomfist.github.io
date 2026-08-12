@@ -3,6 +3,7 @@ youtube_link: https://youtu.be/dqilQxpZhco
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-animation-issues/1030334
 heroes: Doomfist
 credit: Daavel
+short_name: "Animation issues"
 ---
 
 Full credit to `daavel_` from the GetQuakedOn discord server. I did none of the work, but I am willing to take all the credit.

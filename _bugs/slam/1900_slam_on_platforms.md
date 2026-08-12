@@ -9,6 +9,8 @@ heroes:
     - Lifeweaver
     - Mei
 credit: "The Hydra List"
+last_tested: 12/08/26
+short_name: "Slam no-regs on rising platforms"
 ---
 
 Doomfist is unable to hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless you land right in front of the target.

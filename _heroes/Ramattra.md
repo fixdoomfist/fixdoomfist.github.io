@@ -7,10 +7,11 @@ role: "tank"
 portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ddef7c9fb8ce4256e8508196b486f81950efe7aaa6cf27fec4668beb4cd15774.png"
 ---
 
-{{page.title}} {{page.name}}
 
 
-The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.
+<div class='bug_card'>
+<h2>Inconsistent damage origin</h2>
+<p>The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.
 
 Ana has two bugged interactions:
 1. Primary fire. The damage is only blocked if the Doomfist actively looks at Ana. This includes the damage over time, which means that the player can be shot in the back, then look at Ana while the damage is being done, and block most of it.
@@ -28,4 +29,4 @@ Doomfist: Seismic Slam damage will not be blocked if the Doomfist lands his slam
 
 Reinhardt: Earthshatter damage will not be blocked if the Reinhardt lands the ult in front of a blocking Doomfist and teleports behind him before the ability hits.
 
-Wuyang: Guardian Wave damage will not be blocked if the Wuyang lands his ability in front of a blocking Doomfist and teleports behind him before the ability hits.
+Wuyang: Guardian Wave damage will not be blocked if the Wuyang lands his ability in front of a blocking Doomfist and teleports behind him before the ability hits.</p></div>

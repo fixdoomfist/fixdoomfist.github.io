@@ -7,19 +7,22 @@ role: "damage"
 portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf8ffb52b6f315546d5e94e9d6defad5a2c570798776956de23f47536f9529da.png"
 ---
 
-{{page.title}} {{page.name}}
 
 
-While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.
+<div class='bug_card'>
+<h2>Punch momentum override on stairs</h2>
+<p>While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.
 
 The list:
-Anran's Inferno Rush, Ashe's Coach Gun, Bastion's A-36 Tactical Grenade, Brigitte's Whip Shot, Domina's Sonic Repulsors, Hazard's Jagged Wall, Illari's Outburst, Jetpack Cat's Purr, Lúcio's Soundwave, Mauga's Overrun, Orisa's Javelin Spin, Pharah's Concussive Blast, Reinhardt's Shield Slam, Roadhog's ult, Shion's Joyride, Vendetta's Whirlwind Dash, Venture's ult, Venture's melee, Winston's ult, Wuyang's Guardian Wave.
+Anran's Inferno Rush, Ashe's Coach Gun, Bastion's A-36 Tactical Grenade, Brigitte's Whip Shot, Domina's Sonic Repulsors, Hazard's Jagged Wall, Illari's Outburst, Jetpack Cat's Purr, Lúcio's Soundwave, Mauga's Overrun, Orisa's Javelin Spin, Pharah's Concussive Blast, Reinhardt's Shield Slam, Roadhog's ult, Shion's Joyride, Vendetta's Whirlwind Dash, Venture's ult, Venture's melee, Winston's ult, Wuyang's Guardian Wave.</p></div>
 
+<div class='bug_card'>
+<h2>Unblockable Vendetta projectile</h2>
+<p>Vendetta’s Projected Edge is able to damage Doomfist head-on through his block if thrown at a specific angle away from him.</p></div>
 
-Vendetta’s Projected Edge is able to damage Doomfist head-on through his block if thrown at a specific angle away from him.
-
-
-Credit for the Ashe's Coach Gun find is with The Hydra List.
+<div class='bug_card'>
+<h2>Movement abilities override Punch knockback</h2>
+<p>Credit for the Ashe's Coach Gun find is with The Hydra List.
 
 Some abilities are able to override the backwards momentum of Rocket Punch if the target is hit while casting them.
 
@@ -30,7 +33,8 @@ Vendetta's ult makes her receive greatly negated knockback, to the point where s
 The two issues below are extremely hard to reproduce, which is both good, as they are extremely rarely reported, but are still issues nontheless.
 
 Ashe's Coach Gun moves her up as well as backwards. This issue is easier reproduced when walking in the opposite direction of the Doomfist charging punch.
-Baptiste's Rocket Boots are able to almost completely override the momentum of an Empowered Punch.
+Baptiste's Rocket Boots are able to almost completely override the momentum of an Empowered Punch.</p></div>
 
-
-For some unintuitive reason, when Doomfist punches Vendetta that is using her Soar ability at the right time, Vendetta takes full knockback, recovers, and, after recovery, begins to pull herself towards the previously thrown blade. This punishes players trying to deny the character an easy escape and has no intuitive counterplay.
+<div class='bug_card'>
+<h2>Punch unable to cancel Vendetta soar</h2>
+<p>For some unintuitive reason, when Doomfist punches Vendetta that is using her Soar ability at the right time, Vendetta takes full knockback, recovers, and, after recovery, begins to pull herself towards the previously thrown blade. This punishes players trying to deny the character an easy escape and has no intuitive counterplay.</p></div>

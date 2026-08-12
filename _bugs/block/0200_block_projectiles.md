@@ -7,6 +7,8 @@ heroes:
     - Hanzo
     - Mizuki
 credit: Goose
+last_tested: 12/08/26
+short_name: "Bounced projecitle damage origin"
 ---
 
 When projectiles bounce off a wall and hit a blocking Doomfist, the game seems to run a simple calculation to decide if the damage should be blocked or not. It takes the angle at which the projectile bounced off the wall and looks if that angle lands in the block line-of-sight. If it doesn’t, the game assumes that the projectile hit Doomfist in the back, and the damage is not blocked.
