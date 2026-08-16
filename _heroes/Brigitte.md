@@ -4,7 +4,7 @@ title: "Brigitte"
 permalink: "/heroes/Brigitte/"
 name: "Brigitte"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795fba91376d87d441a7f359ae12a3175dfa95825ccc4414cc6b95b129fc4cb0.png"
+portrait: "/assets/images/Brigitte.png"
 ---
 
 

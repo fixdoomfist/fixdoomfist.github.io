@@ -4,7 +4,7 @@ title: "Reinhardt"
 permalink: "/heroes/Reinhardt/"
 name: "Reinhardt"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/551fbe070c16fdfcc17f7f1de63af22c53e7d2f1340fc2f3172441504527bc4e.png"
+portrait: "/assets/images/Reinhardt.png"
 ---
 
 

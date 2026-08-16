@@ -4,7 +4,7 @@ title: "Illari"
 permalink: "/heroes/Illari/"
 name: "Illari"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
+portrait: "/assets/images/Illari.png"
 ---
 
 

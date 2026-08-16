@@ -4,7 +4,7 @@ title: "Lifeweaver"
 permalink: "/heroes/Lifeweaver/"
 name: "Lifeweaver"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3376515cebed0904012e67e956f6d1b9c12e03da642845eeaf787b7e4c7b339d.png"
+portrait: "/assets/images/Lifeweaver.png"
 ---
 
 

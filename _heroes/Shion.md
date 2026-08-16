@@ -4,7 +4,7 @@ title: "Shion"
 permalink: "/heroes/Shion/"
 name: "Shion"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/070481cf871590a2b45a51d1335f9fe3d65eb4e4d361ecdd998b34fae2ed65d5.png"
+portrait: "/assets/images/Shion.png"
 ---
 
 

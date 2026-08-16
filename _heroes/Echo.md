@@ -4,7 +4,7 @@ title: "Echo"
 permalink: "/heroes/Echo/"
 name: "Echo"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4f2d5b0c2b7e82d61353186c5f23152ccba9d3569b50839aa580dca3e9114ba.png"
+portrait: "/assets/images/Echo.png"
 ---
 
 

@@ -4,7 +4,7 @@ title: "Sierra"
 permalink: "/heroes/Sierra/"
 name: "Sierra"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4bfd3d8b95844231115cb5bf4db03344c71bc3e865189c52403b2dc51438e63a.png"
+portrait: "/assets/images/Sierra.png"
 ---
 
 

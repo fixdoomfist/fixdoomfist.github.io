@@ -4,7 +4,7 @@ title: "Sigma"
 permalink: "/heroes/Sigma/"
 name: "Sigma"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
+portrait: "/assets/images/Sigma.png"
 ---
 
 

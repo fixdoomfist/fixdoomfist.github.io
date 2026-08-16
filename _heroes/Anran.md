@@ -4,7 +4,7 @@ title: "Anran"
 permalink: "/heroes/Anran/"
 name: "Anran"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
+portrait: "/assets/images/Anran.png"
 ---
 
 

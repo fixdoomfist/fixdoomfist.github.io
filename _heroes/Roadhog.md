@@ -4,7 +4,7 @@ title: "Roadhog"
 permalink: "/heroes/Roadhog/"
 name: "Roadhog"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
+portrait: "/assets/images/Roadhog.png"
 ---
 
 

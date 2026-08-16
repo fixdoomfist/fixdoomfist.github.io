@@ -4,7 +4,7 @@ title: "Vendetta"
 permalink: "/heroes/Vendetta/"
 name: "Vendetta"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf8ffb52b6f315546d5e94e9d6defad5a2c570798776956de23f47536f9529da.png"
+portrait: "/assets/images/Vendetta.png"
 ---
 
 

@@ -4,7 +4,7 @@ title: "Zenyatta"
 permalink: "/heroes/Zenyatta/"
 name: "Zenyatta"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
+portrait: "/assets/images/Zenyatta.png"
 ---
 
 

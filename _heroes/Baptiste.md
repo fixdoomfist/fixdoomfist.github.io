@@ -4,7 +4,7 @@ title: "Baptiste"
 permalink: "/heroes/Baptiste/"
 name: "Baptiste"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
+portrait: "/assets/images/Baptiste.png"
 ---
 
 

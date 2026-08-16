@@ -4,7 +4,7 @@ title: "Junker Queen"
 permalink: "/heroes/Junker Queen/"
 name: "Junker Queen"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06eeecb359f311f43a8f5121d4f9f3a93c565d70b30e94ef543c05596c9a39dc.png"
+portrait: "/assets/images/Junker Queen.png"
 ---
 
 

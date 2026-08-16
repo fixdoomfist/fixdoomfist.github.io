@@ -4,7 +4,7 @@ title: "Doomfist"
 permalink: "/heroes/Doomfist/"
 name: "Doomfist"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png"
+portrait: "/assets/images/Doomfist.png"
 ---
 
 

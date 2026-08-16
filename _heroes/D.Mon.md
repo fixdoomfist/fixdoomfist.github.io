@@ -4,7 +4,7 @@ title: "D.Mon"
 permalink: "/heroes/D.Mon/"
 name: "D.Mon"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a46c60b8562fdbd0b8308396d0808f7606fba208bc67cccf3f82fe56d2c73b9d.png"
+portrait: "/assets/images/D.Mon.png"
 ---
 
 

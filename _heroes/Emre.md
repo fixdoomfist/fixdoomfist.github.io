@@ -4,7 +4,7 @@ title: "Emre"
 permalink: "/heroes/Emre/"
 name: "Emre"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c51e2f698138861c0e3b6cfab3c3ca9d67fd709be175e7c397aa6f2649712a30.png"
+portrait: "/assets/images/Emre.png"
 ---
 
 

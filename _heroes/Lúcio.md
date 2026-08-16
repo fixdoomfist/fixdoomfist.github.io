@@ -4,7 +4,7 @@ title: "Lúcio"
 permalink: "/heroes/Lúcio/"
 name: "Lúcio"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png"
+portrait: "/assets/images/Lúcio.png"
 ---
 
 

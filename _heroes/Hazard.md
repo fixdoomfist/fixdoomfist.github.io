@@ -4,7 +4,7 @@ title: "Hazard"
 permalink: "/heroes/Hazard/"
 name: "Hazard"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca48b96dbae6ea7f58ce8a5e73513c8c62b1685bdbf258020fb78bb21a008b5f.png"
+portrait: "/assets/images/Hazard.png"
 ---
 
 

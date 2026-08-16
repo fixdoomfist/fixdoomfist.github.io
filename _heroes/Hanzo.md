@@ -4,7 +4,7 @@ title: "Hanzo"
 permalink: "/heroes/Hanzo/"
 name: "Hanzo"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/78b61c3e806fb26b02b8980fba62189155074fc15bd865b0883268e546030be5.png"
+portrait: "/assets/images/Hanzo.png"
 ---
 
 

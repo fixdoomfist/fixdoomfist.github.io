@@ -4,7 +4,7 @@ title: "Mei"
 permalink: "/heroes/Mei/"
 name: "Mei"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a55ced3bd597fb08e0fde9dc007f8543ac616ba98ca3db9b0e4d871a8ae17f8.png"
+portrait: "/assets/images/Mei.png"
 ---
 
 

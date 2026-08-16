@@ -4,7 +4,7 @@ title: "Venture"
 permalink: "/heroes/Venture/"
 name: "Venture"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dcab9123f5f55df22e54d4e797de43c71b917e0149dd059a7fd6136f48464cd0.png"
+portrait: "/assets/images/Venture.png"
 ---
 
 

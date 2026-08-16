@@ -4,7 +4,7 @@ title: "Freja"
 permalink: "/heroes/Freja/"
 name: "Freja"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
+portrait: "/assets/images/Freja.png"
 ---
 
 

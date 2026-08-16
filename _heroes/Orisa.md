@@ -4,7 +4,7 @@ title: "Orisa"
 permalink: "/heroes/Orisa/"
 name: "Orisa"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a73958a28551f5254f3ab3f97c5f5f8d698a95c0b6a515d1a2b1caac169205a6.png"
+portrait: "/assets/images/Orisa.png"
 ---
 
 

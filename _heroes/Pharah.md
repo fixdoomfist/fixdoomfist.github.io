@@ -4,7 +4,7 @@ title: "Pharah"
 permalink: "/heroes/Pharah/"
 name: "Pharah"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
+portrait: "/assets/images/Pharah.png"
 ---
 
 

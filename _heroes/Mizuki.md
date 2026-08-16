@@ -4,7 +4,7 @@ title: "Mizuki"
 permalink: "/heroes/Mizuki/"
 name: "Mizuki"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
+portrait: "/assets/images/Mizuki.png"
 ---
 
 

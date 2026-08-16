@@ -4,7 +4,7 @@ title: "Soldier: 76"
 permalink: "/heroes/Soldier: 76/"
 name: "Soldier: 76"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c93b5f0a528c40473188f77cc2a267aee7d5b6cf5c9e104105d634b4388674e2.png"
+portrait: "/assets/images/Soldier: 76.png"
 ---
 
 

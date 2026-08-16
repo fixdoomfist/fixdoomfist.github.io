@@ -4,7 +4,7 @@ title: "Bastion"
 permalink: "/heroes/Bastion/"
 name: "Bastion"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4ede795c2a681aaccfa72d0c901cba0cb8a2c292fd6a97b2ba9faed161c2d184.png"
+portrait: "/assets/images/Bastion.png"
 ---
 
 

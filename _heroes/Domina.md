@@ -4,7 +4,7 @@ title: "Domina"
 permalink: "/heroes/Domina/"
 name: "Domina"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1161c112292c56c052c0ae711792fcde06e3251b98bc9709e582dd7585b5dcd6.png"
+portrait: "/assets/images/Domina.png"
 ---
 
 

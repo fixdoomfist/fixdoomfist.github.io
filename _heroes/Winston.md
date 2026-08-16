@@ -4,7 +4,7 @@ title: "Winston"
 permalink: "/heroes/Winston/"
 name: "Winston"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/46a10db3aa908c590ddc4e7606376a88143d1f1306ecfbea043263040f9529a5.png"
+portrait: "/assets/images/Winston.png"
 ---
 
 

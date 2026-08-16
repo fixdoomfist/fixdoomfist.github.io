@@ -4,7 +4,7 @@ title: "Ashe"
 permalink: "/heroes/Ashe/"
 name: "Ashe"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4076bbaa2eb52a0bfe612434071e56e7702d5454473dbbea2f9e392a9d997a94.png"
+portrait: "/assets/images/Ashe.png"
 ---
 
 

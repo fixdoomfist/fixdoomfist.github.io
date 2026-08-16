@@ -4,7 +4,7 @@ title: "Wuyang"
 permalink: "/heroes/Wuyang/"
 name: "Wuyang"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
+portrait: "/assets/images/Wuyang.png"
 ---
 
 

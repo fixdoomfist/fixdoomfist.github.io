@@ -4,7 +4,7 @@ title: "Junkrat"
 permalink: "/heroes/Junkrat/"
 name: "Junkrat"
 role: "damage"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7660b9fc6f25f30858fdd8797fe0d52b2306f1e78fef99843f58a274e69af046.png"
+portrait: "/assets/images/Junkrat.png"
 ---
 
 

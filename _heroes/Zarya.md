@@ -4,7 +4,7 @@ title: "Zarya"
 permalink: "/heroes/Zarya/"
 name: "Zarya"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9b6f63cc66ddf9d5e0862173c733cc0d2e574c5c89357798d91b93b2f95a7080.png"
+portrait: "/assets/images/Zarya.png"
 ---
 
 

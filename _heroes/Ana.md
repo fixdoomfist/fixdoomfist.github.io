@@ -4,7 +4,7 @@ title: "Ana"
 permalink: "/heroes/Ana/"
 name: "Ana"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/985b06beae46b7ba3ca87d1512d0fc62ca7f206ceca58ef16fc44d43a1cc84ed.png"
+portrait: "/assets/images/Ana.png"
 ---
 
 

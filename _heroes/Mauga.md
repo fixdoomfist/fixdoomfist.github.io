@@ -4,7 +4,7 @@ title: "Mauga"
 permalink: "/heroes/Mauga/"
 name: "Mauga"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/33d39bb439c08975197fc52eff4874716839711b5356c4fdc174f9c24bac1d0e.png"
+portrait: "/assets/images/Mauga.png"
 ---
 
 

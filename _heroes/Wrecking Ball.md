@@ -4,7 +4,7 @@ title: "Wrecking Ball"
 permalink: "/heroes/Wrecking Ball/"
 name: "Wrecking Ball"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9ef1d58867136e0b26f928d896000b9dab216118f6e2f59e53f2e975e1e27afa.png"
+portrait: "/assets/images/Wrecking Ball.png"
 ---
 
 

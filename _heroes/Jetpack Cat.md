@@ -4,7 +4,7 @@ title: "Jetpack Cat"
 permalink: "/heroes/Jetpack Cat/"
 name: "Jetpack Cat"
 role: "support"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png"
+portrait: "/assets/images/Jetpack Cat.png"
 ---
 
 

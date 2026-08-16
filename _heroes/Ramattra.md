@@ -4,7 +4,7 @@ title: "Ramattra"
 permalink: "/heroes/Ramattra/"
 name: "Ramattra"
 role: "tank"
-portrait: "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ddef7c9fb8ce4256e8508196b486f81950efe7aaa6cf27fec4668beb4cd15774.png"
+portrait: "/assets/images/Ramattra.png"
 ---
 
 
