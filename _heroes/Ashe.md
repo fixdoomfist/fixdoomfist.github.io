@@ -7,8 +7,6 @@ role: "damage"
 portrait: "/assets/images/Ashe.png"
 ---
 
-
-
 <div class='bug_card'>
 <h2>Punch momentum override on stairs</h2>
 <p>While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.
@@ -23,10 +21,6 @@ Anran's Inferno Rush, Ashe's Coach Gun, Bastion's A-36 Tactical Grenade, Brigitt
 Some abilities are able to override the backwards momentum of Rocket Punch if the target is hit while casting them.
 
 Freja's Updraft moves her up as well as backwards.
-Jetpack Cat's Frenetic Flight makes her receive greatly negated knockback, to the point where she barely moves from Empowered Punch.
-Vendetta's ult makes her receive greatly negated knockback, to the point where she barely moves from Empowered Punch
-
-The two issues below are extremely hard to reproduce, which is both good, as they are extremely rarely reported, but are still issues nontheless.
-
 Ashe's Coach Gun moves her up as well as backwards. This issue is easier reproduced when walking in the opposite direction of the Doomfist charging punch.
-Baptiste's Rocket Boots are able to almost completely override the momentum of an Empowered Punch.</p></div>
+
+~~Baptiste's Rocket Boots are able to almost completely override the momentum of an Empowered Punch.~~ Issue no longer tracked as it seems to be unreplicatable.</p></div>

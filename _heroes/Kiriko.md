@@ -6,4 +6,3 @@ name: "Kiriko"
 role: "support"
 portrait: "/assets/images/Kiriko.png"
 ---
-

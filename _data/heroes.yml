@@ -21,7 +21,7 @@
 - name: Brigitte
   portrait: /assets/images/Brigitte.png
   role: support
-  bug_count: 4
+  bug_count: 3
 - name: Cassidy
   portrait: /assets/images/Cassidy.png
   role: damage
@@ -29,15 +29,15 @@
 - name: D.Mon
   portrait: /assets/images/D.Mon.png
   role: tank
-  bug_count: 1
+  bug_count: 0
 - name: Domina
   portrait: /assets/images/Domina.png
   role: tank
-  bug_count: 4
+  bug_count: 3
 - name: Doomfist
   portrait: /assets/images/Doomfist.png
   role: tank
-  bug_count: 9
+  bug_count: 8
 - name: D.Va
   portrait: /assets/images/D.Va.png
   role: tank
@@ -45,11 +45,11 @@
 - name: Echo
   portrait: /assets/images/Echo.png
   role: damage
-  bug_count: 1
+  bug_count: 0
 - name: Emre
   portrait: /assets/images/Emre.png
   role: damage
-  bug_count: 1
+  bug_count: 0
 - name: Freja
   portrait: /assets/images/Freja.png
   role: damage
@@ -61,19 +61,19 @@
 - name: Hanzo
   portrait: /assets/images/Hanzo.png
   role: damage
-  bug_count: 2
+  bug_count: 1
 - name: Hazard
   portrait: /assets/images/Hazard.png
   role: tank
-  bug_count: 2
+  bug_count: 1
 - name: Illari
   portrait: /assets/images/Illari.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Jetpack Cat
   portrait: /assets/images/Jetpack Cat.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Junker Queen
   portrait: /assets/images/Junker Queen.png
   role: tank
@@ -93,7 +93,7 @@
 - name: Lifeweaver
   portrait: /assets/images/Lifeweaver.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Lúcio
   portrait: /assets/images/Lúcio.png
   role: support
@@ -101,11 +101,11 @@
 - name: Mauga
   portrait: /assets/images/Mauga.png
   role: tank
-  bug_count: 3
+  bug_count: 2
 - name: Mei
   portrait: /assets/images/Mei.png
   role: damage
-  bug_count: 5
+  bug_count: 4
 - name: Mercy
   portrait: /assets/images/Mercy.png
   role: support
@@ -121,7 +121,7 @@
 - name: Orisa
   portrait: /assets/images/Orisa.png
   role: tank
-  bug_count: 3
+  bug_count: 2
 - name: Pharah
   portrait: /assets/images/Pharah.png
   role: damage
@@ -137,7 +137,7 @@
 - name: Reinhardt
   portrait: /assets/images/Reinhardt.png
   role: tank
-  bug_count: 4
+  bug_count: 3
 - name: Roadhog
   portrait: /assets/images/Roadhog.png
   role: tank
@@ -153,7 +153,7 @@
 - name: Sigma
   portrait: /assets/images/Sigma.png
   role: tank
-  bug_count: 3
+  bug_count: 2
 - name: Sojourn
   portrait: /assets/images/Sojourn.png
   role: damage
@@ -181,7 +181,7 @@
 - name: Vendetta
   portrait: /assets/images/Vendetta.png
   role: damage
-  bug_count: 4
+  bug_count: 3
 - name: Venture
   portrait: /assets/images/Venture.png
   role: damage
@@ -201,7 +201,7 @@
 - name: Wuyang
   portrait: /assets/images/Wuyang.png
   role: support
-  bug_count: 4
+  bug_count: 3
 - name: Zarya
   portrait: /assets/images/Zarya.png
   role: tank
@@ -209,4 +209,4 @@
 - name: Zenyatta
   portrait: /assets/images/Zenyatta.png
   role: support
-  bug_count: 1
+  bug_count: 0

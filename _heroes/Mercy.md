@@ -6,4 +6,3 @@ name: "Mercy"
 role: "support"
 portrait: "/assets/images/Mercy.png"
 ---
-

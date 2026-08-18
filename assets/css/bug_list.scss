@@ -1,0 +1,20 @@
+---
+---
+
+.card {
+  max-width: calc(100% - 4rem);
+  margin: 0 auto 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #2d313a;
+  border-radius: 8px;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.875rem;
+  color: #9aa0a6;
+}

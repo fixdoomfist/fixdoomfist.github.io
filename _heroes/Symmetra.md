@@ -6,4 +6,3 @@ name: "Symmetra"
 role: "damage"
 portrait: "/assets/images/Symmetra.png"
 ---
-

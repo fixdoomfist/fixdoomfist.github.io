@@ -6,4 +6,3 @@ name: "Widowmaker"
 role: "damage"
 portrait: "/assets/images/Widowmaker.png"
 ---
-

@@ -6,4 +6,3 @@ name: "Sombra"
 role: "damage"
 portrait: "/assets/images/Sombra.png"
 ---
-

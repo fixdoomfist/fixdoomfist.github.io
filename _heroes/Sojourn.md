@@ -6,4 +6,3 @@ name: "Sojourn"
 role: "damage"
 portrait: "/assets/images/Sojourn.png"
 ---
-

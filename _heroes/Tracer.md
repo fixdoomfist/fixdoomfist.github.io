@@ -6,4 +6,3 @@ name: "Tracer"
 role: "damage"
 portrait: "/assets/images/Tracer.png"
 ---
-

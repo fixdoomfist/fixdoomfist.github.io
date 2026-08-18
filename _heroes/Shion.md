@@ -7,8 +7,6 @@ role: "damage"
 portrait: "/assets/images/Shion.png"
 ---
 
-
-
 <div class='bug_card'>
 <h2>Punch momentum override on stairs</h2>
 <p>While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.

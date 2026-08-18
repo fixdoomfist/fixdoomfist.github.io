@@ -6,4 +6,3 @@ name: "Juno"
 role: "support"
 portrait: "/assets/images/Juno.png"
 ---
-

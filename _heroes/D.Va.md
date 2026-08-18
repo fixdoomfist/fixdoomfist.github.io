@@ -6,4 +6,3 @@ name: "D.Va"
 role: "tank"
 portrait: "/assets/images/D.Va.png"
 ---
-

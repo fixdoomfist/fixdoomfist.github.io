@@ -6,4 +6,3 @@ name: "Reaper"
 role: "damage"
 portrait: "/assets/images/Reaper.png"
 ---
-

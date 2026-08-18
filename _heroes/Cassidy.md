@@ -6,4 +6,3 @@ name: "Cassidy"
 role: "damage"
 portrait: "/assets/images/Cassidy.png"
 ---
-

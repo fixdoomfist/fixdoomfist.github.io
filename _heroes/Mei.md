@@ -7,14 +7,6 @@ role: "damage"
 portrait: "/assets/images/Mei.png"
 ---
 
-
-
-<div class='bug_card'>
-<h2>Punch removes stun</h2>
-<p>If Doomfist uses Rocket Punch on a stunned enemy, all stun effects will be removed instantly. This does not involve the rooted status effects like Junkrat trap.
-
-It is worth noting that, despite the fact that this interaction is exclusive to Doomfist and not a single other stun ability (i.e. Sigma Rock, Mauga Overrun) behaves in the same way, I've been told by The Hydra List authors that this mechanic is intended. I completely disagree and will continue to treat it as a game-breaking bug.</p></div>
-
 <div class='bug_card'>
 <h2>Slam no-regs inside of Ice Wall</h2>
 <p>Doomfist’s Seismic Slam is consistently not registering damage on targets that are within “gaps” of Mei’s Ice Wall. This can be easily abused.</p></div>

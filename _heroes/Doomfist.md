@@ -7,8 +7,6 @@ role: "tank"
 portrait: "/assets/images/Doomfist.png"
 ---
 
-
-
 <div class='bug_card'>
 <h2>Inconsistent damage origin</h2>
 <p>The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.
@@ -30,12 +28,6 @@ Doomfist: Seismic Slam damage will not be blocked if the Doomfist lands his slam
 Reinhardt: Earthshatter damage will not be blocked if the Reinhardt lands the ult in front of a blocking Doomfist and teleports behind him before the ability hits.
 
 Wuyang: Guardian Wave damage will not be blocked if the Wuyang lands his ability in front of a blocking Doomfist and teleports behind him before the ability hits.</p></div>
-
-<div class='bug_card'>
-<h2>Punch removes stun</h2>
-<p>If Doomfist uses Rocket Punch on a stunned enemy, all stun effects will be removed instantly. This does not involve the rooted status effects like Junkrat trap.
-
-It is worth noting that, despite the fact that this interaction is exclusive to Doomfist and not a single other stun ability (i.e. Sigma Rock, Mauga Overrun) behaves in the same way, I've been told by The Hydra List authors that this mechanic is intended. I completely disagree and will continue to treat it as a game-breaking bug.</p></div>
 
 <div class='bug_card'>
 <h2>Punch cancel late stalemate</h2>

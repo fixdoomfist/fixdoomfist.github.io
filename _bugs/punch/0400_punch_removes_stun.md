@@ -4,19 +4,12 @@ bug_report:
     - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-removes-stun-from-enemies/998267
     - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-cancels-abilities-like-a-stun/155417
 heroes:
-    - Brigitte
-    - Domina
-    - Doomfist
-    - Mauga
-    - Mei
-    - Orisa
-    - Reinhardt
-    - Sigma
-    - Wuyang
-credit: "Common knowledge"
+    - Intended
 last_tested: 12/08/26
 short_name: "Punch removes stun"
 ---
+
+# As of 18/08/26, this behavior is considered to be intended, as per confirmation from Creme.
 
 If Doomfist uses Rocket Punch on a stunned enemy, all stun effects will be removed instantly. This does not involve the rooted status effects like Junkrat trap.
 
