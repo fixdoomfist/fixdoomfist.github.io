@@ -1,12 +1,14 @@
 ---
-youtube_link: https://youtu.be/55BTyaU69Aw
 bug_report:
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-removes-stun-from-enemies/998267
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-cancels-abilities-like-a-stun/155417
+- https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-removes-stun-from-enemies/998267
+- https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-cancels-abilities-like-a-stun/155417
 heroes:
-    - Intended
+- Intended
+id: '0400'
 last_tested: 12/08/26
-short_name: "Punch removes stun"
+permalink: /bugs/punch/removes-stun/
+short_name: Punch removes stun
+youtube_link: https://youtu.be/55BTyaU69Aw
 ---
 
 # As of 18/08/26, this behavior is considered to be intended, as per confirmation from Creme.

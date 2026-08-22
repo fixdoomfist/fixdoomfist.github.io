@@ -1,31 +1,33 @@
 ---
-youtube_link: https://youtu.be/_3Vhii89xNk
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-momentum-can-be-overriden-on-stairs/996772
-heroes:
-    - Anran
-    - Ashe
-    - Bastion
-    - Brigitte
-    - Domina
-    - Hazard
-    - Illari
-    - "Jetpack Cat"
-    - Lúcio
-    - Mauga
-    - Orisa
-    - Pharah
-    - Reinhardt
-    - Roadhog
-    - Shion
-    - Vendetta
-    - Venture
-    - Venture
-    - Winston
-    - "Wrecking Ball"
-    - Wuyang
 credit: Goose
+heroes:
+- Anran
+- Ashe
+- Bastion
+- Brigitte
+- Domina
+- Hazard
+- Illari
+- Jetpack Cat
+- Lúcio
+- Mauga
+- Orisa
+- Pharah
+- Reinhardt
+- Roadhog
+- Shion
+- Vendetta
+- Venture
+- Venture
+- Winston
+- Wrecking Ball
+- Wuyang
+id: '0300'
 last_tested: 12/08/26
-short_name: "Punch momentum override on stairs"
+permalink: /bugs/punch/momentum-on-stairs/
+short_name: Punch momentum override on stairs
+youtube_link: https://youtu.be/_3Vhii89xNk
 ---
 
 While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.

@@ -1,0 +1,24 @@
+---
+layout: null
+title: FixDoomfist | Bugs | Misc
+---
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="{{'/assets/css/bug_list.css' | relative_url}}">
+    </head>
+    <body>
+        {% for bug in site.bugs %}
+            {% if bug.path contains '_bugs/misc/' %}
+                <a href="{{bug.permalink}}">
+                <div class="card">
+                    <div class="title">{{bug.short_name}}</div>
+                </div>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

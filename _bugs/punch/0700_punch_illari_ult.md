@@ -1,10 +1,12 @@
 ---
-youtube_link: https://youtu.be/IDVSBzKArts
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-only-block-illari-ult-under-certain-conditions/985259
+credit: The Hydra List
 heroes: Illari
-credit: "The Hydra List"
+id: '0700'
 last_tested: 12/08/26
-short_name: "Unblockable Illari ult"
+permalink: /bugs/punch/illari-ult/
+short_name: Unblockable Illari ult
+youtube_link: https://youtu.be/IDVSBzKArts
 ---
 
 When Illari ultimate hits Doomfist and the Doomfist is dealt sufficient damage, the ultimate “blows up”. Every single interaction doomfist has with abilities that stick to the player behave the same way - you can block them. You can block echo bombs, tracer ultimate, etc.

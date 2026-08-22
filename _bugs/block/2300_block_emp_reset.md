@@ -1,19 +1,21 @@
 ---
-youtube_link: https://youtu.be/cLZVs5a_h7I
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-cooldown-does-not-reset-on-being-empowered/1014811
-heroes:
-    - Ana
-    - Brigitte
-    - Domina
-    - "Jetpack Cat"
-    - Mauga
-    - Orisa
-    - Reinhardt
-    - Sigma
-    - Wuyang
 credit: Goose
+heroes:
+- Ana
+- Brigitte
+- Domina
+- Jetpack Cat
+- Mauga
+- Orisa
+- Reinhardt
+- Sigma
+- Wuyang
+id: '2300'
 last_tested: 12/08/26
-short_name: "Punch cooldown not resetting"
+permalink: /bugs/block/emp-reset/
+short_name: Punch cooldown not resetting
+youtube_link: https://youtu.be/cLZVs5a_h7I
 ---
 
 Thanks to `itztonii` for providing a fresh clip with the replay code.

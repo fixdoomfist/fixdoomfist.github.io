@@ -1,22 +1,24 @@
 ---
-youtube_link:
-    - https://youtu.be/XyuGykiCtVA
-    - https://youtu.be/nHlEHwvVaUk
 bug_report:
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent/985284
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent-cont/997116
+- https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent/985284
+- https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent-cont/997116
+credit: The Hydra List
 heroes:
-    - Ana
-    - Ana
-    - Zarya
-    - Ramattra
-    - "Junker Queen"
-    - Doomfist
-    - Reinhardt
-    - Wuyang
-credit: "The Hydra List"
+- Ana
+- Ana
+- Zarya
+- Ramattra
+- Junker Queen
+- Doomfist
+- Reinhardt
+- Wuyang
+id: '0100'
 last_tested: 12/08/26
-short_name: "Inconsistent damage origin"
+permalink: /bugs/block/logic/
+short_name: Inconsistent damage origin
+youtube_link:
+- https://youtu.be/XyuGykiCtVA
+- https://youtu.be/nHlEHwvVaUk
 ---
 
 The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.

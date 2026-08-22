@@ -1,19 +1,21 @@
 ---
-youtube_link:
-    - https://youtu.be/oIG6-oU4bjE
-    - https://youtu.be/Q1SljoO8KAM
-    - https://youtu.be/GnDciOLXoIE
 bug_report:
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-momentum-can-be-overridden-cont/1001227
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-momentum-gets-overridden-by-some-abilities/993286
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-override-frejas-updraft-momentum/991364
-    - https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-apply-full-knockback-to-vendetta-in-ult/993289
-heroes:
-    - Ashe
-    - Freja
+- https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-momentum-can-be-overridden-cont/1001227
+- https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-momentum-gets-overridden-by-some-abilities/993286
+- https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-override-frejas-updraft-momentum/991364
+- https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-apply-full-knockback-to-vendetta-in-ult/993289
 credit: Goose
+heroes:
+- Ashe
+- Freja
+id: '1000'
 last_tested: 12/08/26
-short_name: "Movement abilities override Punch knockback"
+permalink: /bugs/punch/momentum-override/
+short_name: Movement abilities override Punch knockback
+youtube_link:
+- https://youtu.be/oIG6-oU4bjE
+- https://youtu.be/Q1SljoO8KAM
+- https://youtu.be/GnDciOLXoIE
 ---
 
 Credit for the Ashe's Coach Gun find is with The Hydra List.
