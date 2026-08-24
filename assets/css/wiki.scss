@@ -1,13 +1,13 @@
 ---
 ---
 
-@use './color' as c;
+@import './color';
 
 body {
   font-family: sans-serif;
   margin: 0;
   padding-top: 1rem;
-  background: linear-gradient(90deg, #{c.$color-background-dt} 0%, #{c.$color-foreground-dt} 9%, #{c.$color-foreground-dt} 91%, #{c.$color-background-dt} 100%);
+  background: linear-gradient(90deg, $color-background-dt 0%, $color-foreground-dt 9%, $color-foreground-dt 91%, $color-background-dt 100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -35,11 +35,11 @@ a:hover h2 {
 }
 
 .bug_card {
-  background-color: c.$color-foreground-dt;
+  background-color: $color-foreground-dt;
   border-radius: 4px;
   padding-bottom: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
-  color: c.$color-text-dt;
+  color: $color-text-dt;
 }
 
 .bug_card h2 {
@@ -64,16 +64,16 @@ a:hover h2 {
   content: '';
   flex: 1;
   height: 2px;
-  background: linear-gradient(to right, transparent 0%, c.$color-background-dt 50%);
+  background: linear-gradient(to right, transparent 0%, $color-background-dt 50%);
 }
 
 .separator::after {
-  background: linear-gradient(to left, transparent 0%, c.$color-background-dt 50%);
+  background: linear-gradient(to left, transparent 0%, $color-background-dt 50%);
 }
 
 .separator span {
   height: 1.5rem;
   padding: 0 0.5rem;
-  color: c.$color-text-dt;
+  color: $color-text-dt;
 }
 
