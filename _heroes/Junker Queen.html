@@ -1,0 +1,20 @@
+---
+layout: wiki
+title: "FixDoomfist | Junker Queen bugs"
+permalink: "/heroes/Junker Queen/"
+name: "Junker Queen"
+role: "tank"
+portrait: "/assets/images/Junker Queen.png"
+---
+
+{% assign bug_count = 0 %}
+{% for bug in site.bugs %}
+    {% if bug.heroes contains page.name %}
+    {% assign bug_count = bug_count | plus: 1 %}
+    <div class="separator"><span><b>{{bug_count}}</b></span></div>
+        <div class='bug_card'>
+            <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            <p>{{bug.content | markdownify}}</p>
+        </div>
+    {% endif %}
+{% endfor %}

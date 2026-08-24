@@ -1,11 +1,13 @@
 ---
 ---
 
+@import 'color';
+
 body {
   font-family: sans-serif;
   margin: 0;
-  padding: 2rem;
-  background-color: #f4f4f4;
+  padding-top: 1rem;
+  background: linear-gradient(90deg, $color-background-dt 0%, $color-foreground-dt 9%, $color-foreground-dt 91%, $color-background-dt 100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -13,42 +15,65 @@ body {
 }
 
 .wiki-box {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  max-width: 1000px;
-  padding: 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 80%;
 }
 
 h1, h2, h3 {
   margin-top: 0;
 }
 
-.heroes-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover h2 {
+  color: #6d4aff;
 }
 
 .bug_card {
-  border: 1px solid #ccc;
+  background-color: $color-foreground-dt;
   border-radius: 4px;
-  padding: 1rem;
-  background: #fff;
+  padding-bottom: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
+  color: $color-text-dt;
 }
 
-.bug_card h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+.bug_card h2 {
+  margin-top: 0;
+  text-align: center;
 }
 
 .bug_card p {
+  text-align: center;
   white-space: pre-wrap;
   margin: 0 0 0.5rem 0;
-  font-size: 0.9rem;
-  color: #555;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, transparent 0%, $color-background-dt 50%);
+}
+
+.separator::after {
+  background: linear-gradient(to left, transparent 0%, $color-background-dt 50%);
+}
+
+.separator span {
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  color: $color-text-dt;
 }
 

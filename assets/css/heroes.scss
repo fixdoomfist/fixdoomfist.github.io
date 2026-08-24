@@ -1,19 +1,28 @@
 ---
 ---
 
+@import 'color';
+
+body {
+  background: linear-gradient(90deg, $color-foreground-dt 0%, $color-background-dt 14%, $color-background-dt 86%, $color-foreground-dt 100%);
+}
+
 .hero-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 0.5rem;
-  max-width: 75vw;
+  max-width: 75%;
   margin: 0 auto;
 }
 
 .hero-card {
   position: relative;
-  border: 4px solid #005fbf; /* Blue border like Overwatch */
-  border-radius: 8px;
+  border-bottom: 0.2rem solid $color-foreground-dt;
+  border-top: 0.2rem solid $color-foreground-dt;
+  border-left: 0.4rem solid $color-foreground-dt;
+  border-right: 0.4rem solid $color-foreground-dt;
+  border-radius: 0.4rem;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
@@ -28,14 +37,17 @@
 }
 
 .hero-image {
+  border-top: 0.2rem solid $color-foreground-dt;
+  border-bottom: 0.2rem solid $color-foreground-dt;
   width: 100%;
-  height: 70px;
+  height: 5.5rem;
   background-size: cover;
   background-position: center;
   display: block;
 }
 
 .card-text {
+  background-color: $color-foreground-dt;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -43,6 +55,7 @@
 }
 
 .text {
+  color: $color-text-dt;
   display: flex;
   align-items: center;
   justify-content: center;

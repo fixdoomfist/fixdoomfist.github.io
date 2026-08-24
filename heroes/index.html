@@ -13,15 +13,17 @@ title: FixDoomfist | Heroes
     <body>
         <div class="hero-grid">
             {% for hero in site.data.heroes %}
-            <a href="/heroes/{{hero.name}}" class="hero-card" data-role="{{hero.role}}">
-                <div class="card-text">
-                    <span class="text">{{hero.name}}</span>
-                </div>
-                <div class="hero-image" style="background-image: url('{{hero.portrait}}')"></div>
-                <div class="card-text">
-                    <span class="text">BUGS: {{hero.bug_count}}</span>
-                </div>
-            </a>
+                {% if hero.bug_count != 0 %}
+                <a href="/heroes/{{hero.name}}" class="hero-card" data-role="{{hero.role}}">
+                    <div class="card-text">
+                        <span class="text">{{hero.name}}</span>
+                    </div>
+                    <div class="hero-image" style="background-image: url('{{hero.portrait}}')"></div>
+                    <div class="card-text">
+                        <span class="text">BUGS: {{hero.bug_count}}</span>
+                    </div>
+                </a>
+                {% endif %}
             {% endfor %}
         </div>
     </body>

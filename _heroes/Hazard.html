@@ -1,0 +1,20 @@
+---
+layout: wiki
+title: "FixDoomfist | Hazard bugs"
+permalink: "/heroes/Hazard/"
+name: "Hazard"
+role: "tank"
+portrait: "/assets/images/Hazard.png"
+---
+
+{% assign bug_count = 0 %}
+{% for bug in site.bugs %}
+    {% if bug.heroes contains page.name %}
+    {% assign bug_count = bug_count | plus: 1 %}
+    <div class="separator"><span><b>{{bug_count}}</b></span></div>
+        <div class='bug_card'>
+            <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            <p>{{bug.content | markdownify}}</p>
+        </div>
+    {% endif %}
+{% endfor %}
