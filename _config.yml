@@ -4,3 +4,6 @@ collections:
     permalink: /heroes/:path/
   bugs:
     output: true
+
+sass:
+  silence_deprecations: ["import"]

@@ -1,10 +1,10 @@
 ---
 ---
 
-@use "color" as c;
+@import "color";
 
 body {
-  background: linear-gradient(90deg, c.$color-foreground-dt 0%, c.$color-background-dt 14%, c.$color-background-dt 86%, c.$color-foreground-dt 100%);
+  background: linear-gradient(90deg, $color-foreground-dt 0%, $color-background-dt 14%, $color-background-dt 86%, $color-foreground-dt 100%);
 }
 
 .hero-grid {
@@ -18,10 +18,10 @@ body {
 
 .hero-card {
   position: relative;
-  border-bottom: 0.2rem solid c.$color-foreground-dt;
-  border-top: 0.2rem solid c.$color-foreground-dt;
-  border-left: 0.4rem solid c.$color-foreground-dt;
-  border-right: 0.4rem solid c.$color-foreground-dt;
+  border-bottom: 0.2rem solid $color-foreground-dt;
+  border-top: 0.2rem solid $color-foreground-dt;
+  border-left: 0.4rem solid $color-foreground-dt;
+  border-right: 0.4rem solid $color-foreground-dt;
   border-radius: 0.4rem;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -37,8 +37,8 @@ body {
 }
 
 .hero-image {
-  border-top: 0.2rem solid c.$color-foreground-dt;
-  border-bottom: 0.2rem solid c.$color-foreground-dt;
+  border-top: 0.2rem solid $color-foreground-dt;
+  border-bottom: 0.2rem solid $color-foreground-dt;
   width: 100%;
   height: 5.5rem;
   background-size: cover;
@@ -47,7 +47,7 @@ body {
 }
 
 .card-text {
-  background-color: c.$color-foreground-dt;
+  background-color: $color-foreground-dt;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -55,7 +55,7 @@ body {
 }
 
 .text {
-  color: c.$color-text-dt;
+  color: $color-text-dt;
   display: flex;
   align-items: center;
   justify-content: center;
