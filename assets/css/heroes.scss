@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'color';
+@include 'color';
 
 body {
   background: linear-gradient(90deg, $color-foreground-dt 0%, $color-background-dt 14%, $color-background-dt 86%, $color-foreground-dt 100%);
