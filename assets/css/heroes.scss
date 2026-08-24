@@ -1,7 +1,7 @@
 ---
 ---
 
-@use 'color' as c;
+@use './color' as c;
 
 body {
   background: linear-gradient(90deg, c.$color-foreground-dt 0%, c.$color-background-dt 14%, c.$color-background-dt 86%, c.$color-foreground-dt 100%);
