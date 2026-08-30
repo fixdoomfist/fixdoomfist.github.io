@@ -1,212 +1,212 @@
 - name: Ana
-  portrait: /assets/images/Ana.png
+  portrait: /assets/images/heroes/Ana.png
   role: support
   bug_count: 3
 - name: Anran
-  portrait: /assets/images/Anran.png
+  portrait: /assets/images/heroes/Anran.png
   role: damage
   bug_count: 2
 - name: Ashe
-  portrait: /assets/images/Ashe.png
+  portrait: /assets/images/heroes/Ashe.png
   role: damage
   bug_count: 2
 - name: Baptiste
-  portrait: /assets/images/Baptiste.png
+  portrait: /assets/images/heroes/Baptiste.png
   role: support
   bug_count: 2
 - name: Bastion
-  portrait: /assets/images/Bastion.png
+  portrait: /assets/images/heroes/Bastion.png
   role: damage
   bug_count: 1
 - name: Brigitte
-  portrait: /assets/images/Brigitte.png
+  portrait: /assets/images/heroes/Brigitte.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Cassidy
-  portrait: /assets/images/Cassidy.png
+  portrait: /assets/images/heroes/Cassidy.png
   role: damage
   bug_count: 0
 - name: D.Mon
-  portrait: /assets/images/D.Mon.png
+  portrait: /assets/images/heroes/D.Mon.png
   role: tank
   bug_count: 0
 - name: Domina
-  portrait: /assets/images/Domina.png
+  portrait: /assets/images/heroes/Domina.png
   role: tank
-  bug_count: 3
+  bug_count: 2
 - name: Doomfist
-  portrait: /assets/images/Doomfist.png
+  portrait: /assets/images/heroes/Doomfist.png
   role: tank
   bug_count: 8
 - name: D.Va
-  portrait: /assets/images/D.Va.png
+  portrait: /assets/images/heroes/D.Va.png
   role: tank
   bug_count: 0
 - name: Echo
-  portrait: /assets/images/Echo.png
+  portrait: /assets/images/heroes/Echo.png
   role: damage
   bug_count: 0
 - name: Emre
-  portrait: /assets/images/Emre.png
+  portrait: /assets/images/heroes/Emre.png
   role: damage
   bug_count: 0
 - name: Freja
-  portrait: /assets/images/Freja.png
+  portrait: /assets/images/heroes/Freja.png
   role: damage
   bug_count: 2
 - name: Genji
-  portrait: /assets/images/Genji.png
+  portrait: /assets/images/heroes/Genji.png
   role: damage
   bug_count: 0
 - name: Hanzo
-  portrait: /assets/images/Hanzo.png
+  portrait: /assets/images/heroes/Hanzo.png
   role: damage
   bug_count: 1
 - name: Hazard
-  portrait: /assets/images/Hazard.png
+  portrait: /assets/images/heroes/Hazard.png
   role: tank
   bug_count: 1
 - name: Illari
-  portrait: /assets/images/Illari.png
+  portrait: /assets/images/heroes/Illari.png
   role: support
   bug_count: 2
 - name: Jetpack Cat
-  portrait: /assets/images/Jetpack Cat.png
+  portrait: /assets/images/heroes/Jetpack Cat.png
   role: support
-  bug_count: 2
+  bug_count: 1
 - name: Junker Queen
-  portrait: /assets/images/Junker Queen.png
+  portrait: /assets/images/heroes/Junker Queen.png
   role: tank
   bug_count: 1
 - name: Junkrat
-  portrait: /assets/images/Junkrat.png
+  portrait: /assets/images/heroes/Junkrat.png
   role: damage
   bug_count: 1
 - name: Juno
-  portrait: /assets/images/Juno.png
+  portrait: /assets/images/heroes/Juno.png
   role: support
   bug_count: 0
 - name: Kiriko
-  portrait: /assets/images/Kiriko.png
+  portrait: /assets/images/heroes/Kiriko.png
   role: support
   bug_count: 0
 - name: Lifeweaver
-  portrait: /assets/images/Lifeweaver.png
+  portrait: /assets/images/heroes/Lifeweaver.png
   role: support
   bug_count: 2
 - name: Lúcio
-  portrait: /assets/images/Lúcio.png
+  portrait: /assets/images/heroes/Lúcio.png
   role: support
   bug_count: 1
 - name: Mauga
-  portrait: /assets/images/Mauga.png
+  portrait: /assets/images/heroes/Mauga.png
   role: tank
-  bug_count: 2
+  bug_count: 1
 - name: Mei
-  portrait: /assets/images/Mei.png
+  portrait: /assets/images/heroes/Mei.png
   role: damage
   bug_count: 4
 - name: Mercy
-  portrait: /assets/images/Mercy.png
+  portrait: /assets/images/heroes/Mercy.png
   role: support
   bug_count: 0
 - name: Mizuki
-  portrait: /assets/images/Mizuki.png
+  portrait: /assets/images/heroes/Mizuki.png
   role: support
   bug_count: 2
 - name: Moira
-  portrait: /assets/images/Moira.png
+  portrait: /assets/images/heroes/Moira.png
   role: support
   bug_count: 0
 - name: Orisa
-  portrait: /assets/images/Orisa.png
+  portrait: /assets/images/heroes/Orisa.png
   role: tank
   bug_count: 2
 - name: Pharah
-  portrait: /assets/images/Pharah.png
+  portrait: /assets/images/heroes/Pharah.png
   role: damage
   bug_count: 1
 - name: Ramattra
-  portrait: /assets/images/Ramattra.png
+  portrait: /assets/images/heroes/Ramattra.png
   role: tank
   bug_count: 1
 - name: Reaper
-  portrait: /assets/images/Reaper.png
+  portrait: /assets/images/heroes/Reaper.png
   role: damage
   bug_count: 0
 - name: Reinhardt
-  portrait: /assets/images/Reinhardt.png
+  portrait: /assets/images/heroes/Reinhardt.png
   role: tank
   bug_count: 3
 - name: Roadhog
-  portrait: /assets/images/Roadhog.png
+  portrait: /assets/images/heroes/Roadhog.png
   role: tank
   bug_count: 1
 - name: Shion
-  portrait: /assets/images/Shion.png
+  portrait: /assets/images/heroes/Shion.png
   role: damage
   bug_count: 1
 - name: Sierra
-  portrait: /assets/images/Sierra.png
+  portrait: /assets/images/heroes/Sierra.png
   role: damage
   bug_count: 1
 - name: Sigma
-  portrait: /assets/images/Sigma.png
+  portrait: /assets/images/heroes/Sigma.png
   role: tank
   bug_count: 2
 - name: Sojourn
-  portrait: /assets/images/Sojourn.png
+  portrait: /assets/images/heroes/Sojourn.png
   role: damage
   bug_count: 0
 - name: 'Soldier: 76'
-  portrait: '/assets/images/Soldier: 76.png'
+  portrait: '/assets/images/heroes/Soldier: 76.png'
   role: damage
   bug_count: 1
 - name: Sombra
-  portrait: /assets/images/Sombra.png
+  portrait: /assets/images/heroes/Sombra.png
   role: damage
   bug_count: 0
 - name: Symmetra
-  portrait: /assets/images/Symmetra.png
+  portrait: /assets/images/heroes/Symmetra.png
   role: damage
   bug_count: 0
 - name: Torbjörn
-  portrait: /assets/images/Torbjörn.png
+  portrait: /assets/images/heroes/Torbjörn.png
   role: damage
   bug_count: 0
 - name: Tracer
-  portrait: /assets/images/Tracer.png
+  portrait: /assets/images/heroes/Tracer.png
   role: damage
   bug_count: 0
 - name: Vendetta
-  portrait: /assets/images/Vendetta.png
+  portrait: /assets/images/heroes/Vendetta.png
   role: damage
   bug_count: 3
 - name: Venture
-  portrait: /assets/images/Venture.png
+  portrait: /assets/images/heroes/Venture.png
   role: damage
   bug_count: 2
 - name: Widowmaker
-  portrait: /assets/images/Widowmaker.png
+  portrait: /assets/images/heroes/Widowmaker.png
   role: damage
   bug_count: 0
 - name: Winston
-  portrait: /assets/images/Winston.png
+  portrait: /assets/images/heroes/Winston.png
   role: tank
   bug_count: 2
 - name: Wrecking Ball
-  portrait: /assets/images/Wrecking Ball.png
+  portrait: /assets/images/heroes/Wrecking Ball.png
   role: tank
   bug_count: 1
 - name: Wuyang
-  portrait: /assets/images/Wuyang.png
+  portrait: /assets/images/heroes/Wuyang.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Zarya
-  portrait: /assets/images/Zarya.png
+  portrait: /assets/images/heroes/Zarya.png
   role: tank
   bug_count: 1
 - name: Zenyatta
-  portrait: /assets/images/Zenyatta.png
+  portrait: /assets/images/heroes/Zenyatta.png
   role: support
   bug_count: 0

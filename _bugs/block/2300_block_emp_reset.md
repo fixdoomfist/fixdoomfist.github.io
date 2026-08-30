@@ -3,14 +3,9 @@ bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-cooldo
 credit: Goose
 heroes:
 - Ana
-- Brigitte
-- Domina
-- Jetpack Cat
-- Mauga
 - Orisa
 - Reinhardt
 - Sigma
-- Wuyang
 id: '2300'
 last_tested: 12/08/26
 permalink: /bugs/block/emp-reset/
