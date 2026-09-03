@@ -11,14 +11,26 @@ title: FixDoomfist | Bugs | Ult
         <link rel="stylesheet" href="{{'/assets/css/bug_list.css' | relative_url}}">
     </head>
     <body>
-        {% for bug in site.bugs %}
-            {% if bug.path contains '_bugs/ult/' %}
-                <a href="{{bug.permalink}}">
-                <div class="card">
-                    <div class="title">{{bug.short_name}}</div>
-                </div>
-                </a>
-            {% endif %}
-        {% endfor %}
+        <div class="columns">
+            {% for bug in site.bugs %}
+                {% if bug.path contains '_bugs/ult/' %}
+                    <a href="{{bug.permalink}}">
+                        {% assign hero_count = bug.heroes | uniq | size %}
+                        <div class="card">
+                            <h1>{{bug.short_name}}</h1>
+                            <div class="stats">
+                                {% if hero_count != 1 %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
+                                {% else %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> hero can apply</h3>
+                                {% endif %}
+                                <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
+                                <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
     </body>
 </html>

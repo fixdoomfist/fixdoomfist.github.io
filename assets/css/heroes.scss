@@ -28,8 +28,8 @@ body {
   text-decoration: none;
   font-family: sans-serif;
   color: black;
-  outline: none;          /* Removes the default browser outline */
-  -webkit-tap-highlight-color: transparent; /* Removes the grey flash on mobile taps */
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hero-card:active {
