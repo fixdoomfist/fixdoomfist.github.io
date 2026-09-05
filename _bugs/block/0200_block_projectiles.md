@@ -1,4 +1,5 @@
 ---
+ability_rank: 2
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-does-not-block-bounced-projectiles-properly/1029577
 credit: Goose
 heroes:
@@ -8,8 +9,11 @@ heroes:
 - Mizuki
 id: '0200'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/block/projectiles/
 short_name: Bounced projecitle damage origin
+total_rank: 2
 youtube_link: https://youtu.be/Cbi0p02BoMU
 ---
 

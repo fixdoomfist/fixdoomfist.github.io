@@ -1,11 +1,15 @@
 ---
+ability_rank: 5
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-gets-stunned-by-domina-when-he-shouldnt/1004160
 credit: Goose
 heroes: Domina
 id: 0900
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: false
 permalink: /bugs/punch/domina-stun/
 short_name: Domina stun lasts through punch
+total_rank: 9
 youtube_link: https://youtu.be/HolRuwi9fOo
 ---
 

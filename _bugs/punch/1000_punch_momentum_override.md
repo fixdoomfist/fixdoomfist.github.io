@@ -1,4 +1,5 @@
 ---
+ability_rank: 6
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-momentum-can-be-overridden-cont/1001227
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-momentum-gets-overridden-by-some-abilities/993286
@@ -10,8 +11,11 @@ heroes:
 - Freja
 id: '1000'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: false
 permalink: /bugs/punch/momentum-override/
 short_name: Movement abilities override Punch knockback
+total_rank: 10
 youtube_link:
 - https://youtu.be/oIG6-oU4bjE
 - https://youtu.be/Q1SljoO8KAM

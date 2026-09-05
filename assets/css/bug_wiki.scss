@@ -1,0 +1,113 @@
+---
+---
+
+@import "color";
+
+body {
+    display: flex;
+    margin: 0;
+    background: $color-foreground-dt;
+    justify-content: center;
+    color: $color-text-dt;
+    font-size: 1.1rem;
+}
+
+.wiki-box {
+    width: 100%;
+    max-width: 80%;
+}
+
+.separator {
+    position: relative;
+    height: 1px;
+    background: $color-background-dt;
+    margin: 2rem 0;
+    top: 1rem;
+}
+
+.separator h3 {
+    position: absolute;
+    display: inline-block;
+    clip-path: polygon(
+        1.3em 0,
+        calc(100% - 1.3em) 0,
+        100% 100%,
+        0 100%
+    );
+    background: $color-background-dt;
+    top: calc(-2.97rem - 0.5px);
+    padding: 0 2rem;
+    gap: 0 1rem;
+}
+
+/* i know this is sloppy, but :first-child doesnt work for some reason, and i dont care. cry about it. */
+.separator-first {
+    position: relative;
+    height: 1px;
+    background: $color-background-dt;
+    margin: 0 0 2rem 0;
+    top: 1rem;
+}
+
+.separator-first h3 {
+    position: absolute;
+    display: inline-block;
+    clip-path: polygon(
+        1.3em 0,
+        calc(100% - 1.3em) 0,
+        100% 100%,
+        0 100%
+    );
+    background: $color-background-dt;
+    top: calc(-2.97rem - 0.5px);
+    padding: 0 2rem;
+    gap: 0 1rem;
+}
+
+.video_list {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    gap: 2rem 0;
+}
+
+iframe {
+    border: 0;
+    margin-inline: auto;
+    width: min(90%, 600px);
+    aspect-ratio: 16 / 9;
+}
+
+.title_div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    display: inline-block;
+    color: $color-background-dt;
+}
+
+li {
+    list-style-position: inside;
+}
+
+a {
+    color: $color-text-dt;
+    text-decoration-color: $color-background-dt;
+    font-weight: bold;
+}
+
+a:hover {
+    color: $color-background-dt;
+}
+
+.accent {
+    color: $color-background-dt;
+    font-weight: bold;
+}

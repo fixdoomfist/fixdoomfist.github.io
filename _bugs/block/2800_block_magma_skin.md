@@ -1,12 +1,16 @@
 ---
+ability_rank: 6
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-magma-titan-skin-blinds-the-player-when-blocking/996301
 credit: Goose
 heroes:
 - Doomfist
 id: '2800'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: false
 permalink: /bugs/block/magma-skin/
 short_name: Magma skin vfx is too bright
+total_rank: 28
 youtube_link: https://youtu.be/RaGr6jMW7jM
 ---
 

@@ -1,4 +1,5 @@
 ---
+ability_rank: 2
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-slam-doesnt-work-on-a-rising-petal-platform/989770
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-slam-doesnt-work-on-a-rising-ice-wall/992814
@@ -8,8 +9,11 @@ heroes:
 - Mei
 id: '1900'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/slam/on-platforms/
 short_name: Slam no-regs on rising platforms
+total_rank: 19
 youtube_link:
 - https://youtu.be/u0qwxd5KP5w
 - https://youtu.be/QQ81BkzoAwI

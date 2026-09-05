@@ -1,11 +1,15 @@
 ---
+ability_rank: 15
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-be-stunned-shortly-after-canceling-his-punch/991112
 credit: The Hydra List
 heroes: Doomfist
 id: '2100'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/punch/late-stalemate/
 short_name: Punch cancel late stalemate
+total_rank: 21
 youtube_link: https://youtu.be/kElUpeX3Yvk
 ---
 

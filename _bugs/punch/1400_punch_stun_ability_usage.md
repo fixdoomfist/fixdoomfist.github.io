@@ -1,7 +1,9 @@
 ---
+ability_rank: 9
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-stun-allows-for-some-ability-usage-cont/1001225
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-stun-allows-for-some-ability-usage/991362
+credit: The Hydra List
 heroes:
 - Winston
 - 'Soldier: 76'
@@ -10,8 +12,11 @@ heroes:
 - Mizuki
 id: '1400'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/punch/stun-ability-usage/
-short_name: Casting abilities while stunned by punch
+short_name: Casting abilities while stunned
+total_rank: 14
 youtube_link:
 - https://youtu.be/ds8055EONU8
 - https://youtu.be/1mK2A2bh1Ws

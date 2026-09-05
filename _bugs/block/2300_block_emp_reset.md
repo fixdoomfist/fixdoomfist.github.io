@@ -1,4 +1,5 @@
 ---
+ability_rank: 5
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-cooldown-does-not-reset-on-being-empowered/1014811
 credit: Goose
 heroes:
@@ -8,8 +9,11 @@ heroes:
 - Sigma
 id: '2300'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/block/emp-reset/
 short_name: Punch cooldown not resetting
+total_rank: 23
 youtube_link: https://youtu.be/cLZVs5a_h7I
 ---
 

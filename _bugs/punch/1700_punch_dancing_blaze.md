@@ -1,11 +1,15 @@
 ---
+ability_rank: 12
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-knockback-anran-coming-out-of-dancing-blaze/1010626
 credit: Goose
 heroes: Anran
 id: '1700'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/punch/dancing-blaze/
 short_name: The rooted effect and it's consequences
+total_rank: 17
 youtube_link: https://youtu.be/TtX_F4ewYV8
 ---
 

@@ -26,7 +26,11 @@ title: FixDoomfist | Bugs | Punch
                                     <h3 class="left"><span class="accent">{{hero_count}}</span> hero can apply</h3>
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
-                                <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% if bug.on_hydra %}
+                                    <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% else %}
+                                    <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
+                                {% endif %}
                             </div>
                         </div>
                     </a>

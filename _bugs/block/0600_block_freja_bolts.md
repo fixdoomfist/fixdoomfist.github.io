@@ -1,4 +1,5 @@
 ---
+ability_rank: 3
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-block-freja-bolts-under-some-conditions/991069
 - https://us.forums.blizzard.com/en/overwatch/t/freja-ignores-doom-block/973912
@@ -7,8 +8,11 @@ credit: The Hydra List
 heroes: Freja
 id: '0600'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/block/freja-bolts/
 short_name: Unblockable Freja bolts
+total_rank: 6
 youtube_link: https://youtu.be/EuQ2k63dljw
 ---
 

@@ -1,4 +1,5 @@
 ---
+ability_rank: 2
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-removes-stun-from-enemies/998267
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-cancels-abilities-like-a-stun/155417
@@ -6,8 +7,11 @@ heroes:
 - Intended
 id: '0400'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: false
 permalink: /bugs/punch/removes-stun/
 short_name: Punch removes stun
+total_rank: 4
 youtube_link: https://youtu.be/55BTyaU69Aw
 ---
 

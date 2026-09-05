@@ -1,11 +1,15 @@
 ---
+ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-is-too-slow-when-going-up-slopes-in-meteor-strike/991319
 credit: The Hydra List
 heroes: Doomfist
 id: '2700'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/ult/stairs/
 short_name: Stuck on slopes in ult
+total_rank: 27
 youtube_link: https://youtu.be/8_BuOFEq6Sc
 ---
 

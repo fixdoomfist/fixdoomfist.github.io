@@ -1,4 +1,5 @@
 ---
+ability_rank: 1
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-momentum-can-be-overriden-on-stairs/996772
 credit: Goose
 heroes:
@@ -25,8 +26,11 @@ heroes:
 - Wuyang
 id: '0300'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/punch/momentum-on-stairs/
 short_name: Punch momentum override on stairs
+total_rank: 3
 youtube_link: https://youtu.be/_3Vhii89xNk
 ---
 

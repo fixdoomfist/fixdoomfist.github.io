@@ -1,4 +1,5 @@
 ---
+ability_rank: 1
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent/985284
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-block-logic-is-extremely-inconsisntent-cont/997116
@@ -14,8 +15,11 @@ heroes:
 - Wuyang
 id: '0100'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: true
 permalink: /bugs/block/logic/
 short_name: Inconsistent damage origin
+total_rank: 1
 youtube_link:
 - https://youtu.be/XyuGykiCtVA
 - https://youtu.be/nHlEHwvVaUk

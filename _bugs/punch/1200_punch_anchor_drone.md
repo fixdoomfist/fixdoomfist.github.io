@@ -1,11 +1,15 @@
 ---
+ability_rank: 7
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-gets-stuck-on-a-deploying-anchor-drone/1014103
 credit: Goose
 heroes: Sierra
 id: '1200'
 last_tested: 12/08/26
+layout: bug_wiki
+on_hydra: false
 permalink: /bugs/punch/anchor-drone/
 short_name: Invulnerable Sierra drone
+total_rank: 12
 youtube_link: https://youtu.be/10n279T6PlM
 ---
 
