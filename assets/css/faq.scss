@@ -1,0 +1,20 @@
+---
+---
+
+@import "color";
+
+body {
+    background: $color-foreground-dt;
+    color: $color-text-dt;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h1 {
+    color: $color-background-dt;
+    padding: 3rem 0 0 0;
+}
+
+h1:first-child {
+    padding: 0;
+}

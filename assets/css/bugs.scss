@@ -36,8 +36,13 @@ body {
             background: radial-gradient(ellipse at center, $color-background-dt 0%, transparent 50%);
         }
 
-        &:hover .side-image {
+        [data-theme="dark"] &:hover .side-image {
             filter: blur(3px) opacity(80%);
+            transition: 0.1s ease-in-out;
+        }
+
+        [data-theme="bright"] &:hover .side-image {
+            filter: blur(3px) opacity(80%) invert(1);
             transition: 0.1s ease-in-out;
         }
     }
@@ -50,16 +55,30 @@ body {
     overflow: hidden;
 }
 
-.left {
+[data-theme="bright"] .left {
     position: fixed;
     left: 1vh;
-    filter: blur(10px) opacity(10%);
     height: 50vh;
+    filter: blur(10px) opacity(30%) invert(1);
 }
 
-.right {
+[data-theme="bright"] .right {
     position: fixed;
     right: 1vh;
-    filter: blur(10px) opacity(10%);
     height: 50vh;
+    filter: blur(10px) opacity(30%) invert(1);
+}
+
+[data-theme="dark"] .left {
+    position: fixed;
+    left: 1vh;
+    height: 50vh;
+    filter: blur(10px) opacity(10%);
+}
+
+[data-theme="dark"] .right {
+    position: fixed;
+    right: 1vh;
+    height: 50vh;
+    filter: blur(10px) opacity(10%);
 }

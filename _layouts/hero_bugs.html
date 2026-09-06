@@ -3,14 +3,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/hero_bugs.css">
-</head>
-<body>
-    <div class="wiki-box">
-        {{ content }}
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        {% include theme.html %}
+        <link rel="stylesheet" href="/assets/css/hero_bugs.css">
+    </head>
+    <body>
+        <div class="wiki-box">
+            {{ content }}
+        </div>
+    </body>
 </html>

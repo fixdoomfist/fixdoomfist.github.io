@@ -1,0 +1,13 @@
+<script>
+    const saved = localStorage.getItem("theme");
+    document.documentElement.dataset.theme =
+        saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    document.addEventListener("click", (e) => {
+        const el = e.target.closest("[data-set-theme]");
+        if (!el) return;
+        const theme = el.dataset.setTheme;
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem("theme", theme);
+    });
+</script>

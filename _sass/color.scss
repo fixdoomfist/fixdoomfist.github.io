@@ -1,6 +1,15 @@
-$color-foreground-bt: #C5CEE0;
-$color-background-bt: #013990;
-$color-foreground-dt: #0A0A0A;
-$color-background-dt: #7E0A0C;
-$color-text-dt: #E0E0E0;
-$color-accent-dt: #6d4aff;
+:root {
+    --color-foreground-dt: #0A0A0A;
+    --color-background-dt: #7E0A0C;
+    --color-text-dt: #E0E0E0;
+}
+
+[data-theme="bright"] {
+    --color-foreground-dt: #FFFFFF;
+    --color-background-dt: #03A9F4;
+    --color-text-dt: #1F1F1F;
+}
+
+$color-foreground-dt: var(--color-foreground-dt);
+$color-background-dt: var(--color-background-dt);
+$color-text-dt: var(--color-text-dt);
