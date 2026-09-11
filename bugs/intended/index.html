@@ -1,0 +1,45 @@
+---
+layout: null
+title: FixDoomfist | Bugs | Intended
+---
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        {% include theme.html %}
+        <link rel="stylesheet" href="{{'/assets/css/bug_list.css' | relative_url}}">
+    </head>
+    <body>
+        <div class="columns">
+            {% for bug in site.bugs %}
+                {% if bug.path contains '_bugs/intended/' %}
+                    <a href="{{bug.permalink}}">
+                        {% assign hero_count = bug.heroes | uniq | size %}
+                        <div class="card">
+                            <h1>{{bug.short_name}}</h1>
+                            <div class="stats">
+                                {% if hero_count != 1 %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
+                                {% else %}
+                                    {% if bug.heroes contains "All heroes" %}
+                                        <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
+                                    {% else %}
+                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                    {% endif %}
+                                {% endif %}
+                                <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
+                                {% if bug.on_hydra %}
+                                    <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% else %}
+                                    <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </body>
+</html>

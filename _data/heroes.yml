@@ -21,7 +21,7 @@
 - name: Brigitte
   portrait: /assets/images/heroes/Brigitte.png
   role: support
-  bug_count: 2
+  bug_count: 3
 - name: Cassidy
   portrait: /assets/images/heroes/Cassidy.png
   role: damage
@@ -37,7 +37,7 @@
 - name: Doomfist
   portrait: /assets/images/heroes/Doomfist.png
   role: tank
-  bug_count: 8
+  bug_count: 11
 - name: D.Va
   portrait: /assets/images/heroes/D.Va.png
   role: tank
@@ -73,7 +73,7 @@
 - name: Jetpack Cat
   portrait: /assets/images/heroes/Jetpack Cat.png
   role: support
-  bug_count: 1
+  bug_count: 2
 - name: Junker Queen
   portrait: /assets/images/heroes/Junker Queen.png
   role: tank
@@ -121,7 +121,7 @@
 - name: Orisa
   portrait: /assets/images/heroes/Orisa.png
   role: tank
-  bug_count: 2
+  bug_count: 3
 - name: Pharah
   portrait: /assets/images/heroes/Pharah.png
   role: damage
@@ -137,7 +137,7 @@
 - name: Reinhardt
   portrait: /assets/images/heroes/Reinhardt.png
   role: tank
-  bug_count: 3
+  bug_count: 4
 - name: Roadhog
   portrait: /assets/images/heroes/Roadhog.png
   role: tank
@@ -153,7 +153,7 @@
 - name: Sigma
   portrait: /assets/images/heroes/Sigma.png
   role: tank
-  bug_count: 2
+  bug_count: 3
 - name: Sojourn
   portrait: /assets/images/heroes/Sojourn.png
   role: damage

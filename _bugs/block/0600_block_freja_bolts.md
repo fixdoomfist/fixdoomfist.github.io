@@ -12,7 +12,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/block/freja-bolts/
 short_name: Unblockable Freja bolts
-total_rank: 6
+total_rank: 5
 youtube_link: https://youtu.be/EuQ2k63dljw
 ---
 

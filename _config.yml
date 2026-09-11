@@ -7,3 +7,6 @@ collections:
 
 sass:
   silence_deprecations: ["import"]
+
+plugins:
+  - jekyll-redirect-from

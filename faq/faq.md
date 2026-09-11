@@ -4,6 +4,10 @@ title: FixDoomfist | FAQ
 permalink: /faq/
 ---
 
+{% assign stats = site.data.stats %}
+
+{{stats.bug_count}}
+
 # When were the bugs last tested?
 
 67/67/6967
@@ -15,6 +19,10 @@ I have played Overwatch since it came out back in 2016. Since 2019 Doomfist basi
 # What is "The Hydra List"?
 
 The Hydra is an extremely important google doc to the community. Authored by Creme and GetQuakedOn, it serves as the main resource for education on the topic of Doomfist bugs. GetQuakedOn also has direct communication with the developers and is able to share feedback directly, so a bug having a spot there generally means better chances of it getting fixed.
+
+# What does it mean when the bug is labeled "All heroes can apply"?
+
+Usually that means the bug is connected to a core gaming mechanic i.e. melee or jumping. These bugs are global and can be replicated with any hero in the game (with a few exceptions i.e. Brigitte and Reinhardt not having a true melee).
 
 # How do I report bugs?
 
@@ -30,15 +38,21 @@ The best thing you can do is spread awareness. Commenting under the bug report p
 
 # How are the bugs ranked?
 
-In this website bugs are ranked by how game-breaking I believe they are. The higher the rank, the more important they are to fix.
+In this website bugs are ranked by how game-breaking I believe they are. The higher the rank, the more important they are to fix. In the intended category they are ranked by how absurd the fact that they will never be fixed is.
 
 # How are the bugs counted?
 
 I try to group bugs by their similarity, and the "total bugs" counter is how many bug groups there is.
 
-"Bugged interactions" are counted by how many each interactions each bug group has, excluding global issues. For example, 7 different characters can replicate "Inconsistent damage origin" bug group, with one of them (Ana) having two bugged interactions in the same group. This means that this one bug group has 8 bugged interactions, and that gives into the count.
+"Bugged interactions" are counted by how many each interactions each bug group has, excluding global issues. For example, 7 different characters can replicate "Inconsistent damage origin" bug group, with one of them (Ana) having two bugged interactions in the same group. This means that this one bug group has 8 bugged interactions, and that gives into the count. Global bugs are not counted towards the bugged interactions counter, otherwise it would become too bloated.
 
-I believe the "bugged interactions" number is the best numerical representation of how many actual bugs the character has.
+# Just how bloated?
+
+Well...
+
+If we also count all global issues towards the bugged interactions count, which is {{stats.jump_in_stun_count}} for jumping in stun plus {{stats.melee_stagger_count}} for melees staggering punch momentum, we get a grand total of {{stats.absurd_bug_count}} bugs!
+
+But... If we also count each known stair spot as an individual bug for each hero that it theoretically can interact with - which is... well.. every hero in the game - we can technically say that Doomfist has {{stats.ridiculous_bug_count}} bugs. How fun.
 
 # Can I help with the website?
 

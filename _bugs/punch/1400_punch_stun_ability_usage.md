@@ -1,5 +1,5 @@
 ---
-ability_rank: 9
+ability_rank: 8
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-stun-allows-for-some-ability-usage-cont/1001225
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-stun-allows-for-some-ability-usage/991362

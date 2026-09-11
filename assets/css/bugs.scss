@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    overflow: hidden;
     background: $color-foreground-dt;
     /* background: linear-gradient(90deg, $color-foreground-dt 25%, $color-background-dt 35%, $color-background-dt 65%, $color-foreground-dt 75%); */
 }
@@ -21,30 +20,28 @@ body {
 .column {
     flex: 1;
     text-align: center;
+}
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: $color-text-dt;
-        min-height: 20vh;
+.column > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $color-text-dt;
+    min-height: 20vh;
 
-        &:hover {
-            background: radial-gradient(ellipse at center, $color-background-dt 0%, transparent 50%);
-        }
+    &:hover {
+        background: radial-gradient(ellipse at center, $color-background-dt 0%, transparent 50%);
+    }
 
-        [data-theme="dark"] &:hover .side-image {
-            filter: blur(3px) opacity(80%);
-            transition: 0.1s ease-in-out;
-        }
+    &:hover .side-image {
+        filter: blur(3px) opacity(80%);
+    }
 
-        [data-theme="bright"] &:hover .side-image {
-            filter: blur(3px) opacity(80%) invert(1);
-            transition: 0.1s ease-in-out;
-        }
+    [data-theme="bright"] &:hover .side-image {
+        filter: blur(3px) opacity(80%) invert(1);
     }
 }
 
@@ -53,32 +50,85 @@ body {
     max-height: 20vh;
     object-fit: contain;
     overflow: hidden;
+    transition: 0.1s ease-in-out;
+    transition-property: filter, opacity;
+}
+
+.left {
+    position: absolute;
+    left: 1vh;
+    height: 50vh;
+    filter: blur(10px) opacity(10%);
+}
+
+.right {
+    position: absolute;
+    right: 1vh;
+    height: 50vh;
+    filter: blur(10px) opacity(10%);
 }
 
 [data-theme="bright"] .left {
-    position: fixed;
+    position: absolute;
     left: 1vh;
     height: 50vh;
     filter: blur(10px) opacity(30%) invert(1);
 }
 
 [data-theme="bright"] .right {
-    position: fixed;
+    position: absolute;
     right: 1vh;
     height: 50vh;
     filter: blur(10px) opacity(30%) invert(1);
 }
 
-[data-theme="dark"] .left {
-    position: fixed;
-    left: 1vh;
-    height: 50vh;
-    filter: blur(10px) opacity(10%);
+.last-row {
+    display: flex;
+    flex-direction: row;
 }
 
-[data-theme="dark"] .right {
-    position: fixed;
-    right: 1vh;
-    height: 50vh;
-    filter: blur(10px) opacity(10%);
+.last-row > .left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    color: $color-text-dt;
+    min-height: 20vh;
+
+    &:hover {
+        background: radial-gradient(ellipse at center, $color-background-dt 0%, transparent 50%);
+    }
+
+    &:hover .side-image {
+        filter: blur(3px) opacity(80%);
+    }
+
+    [data-theme="bright"] &:hover .side-image {
+        filter: blur(3px) opacity(80%) invert(1);
+    }
+}
+
+.last-row > .right-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    color: $color-text-dt;
+    min-height: 20vh;
+
+    &:hover {
+        background: radial-gradient(ellipse at center, $color-background-dt 0%, transparent 50%);
+    }
+
+    &:hover .side-image {
+        filter: blur(3px) opacity(80%);
+    }
+
+    [data-theme="bright"] &:hover .side-image {
+        filter: blur(3px) opacity(80%) invert(1);
+    }
 }

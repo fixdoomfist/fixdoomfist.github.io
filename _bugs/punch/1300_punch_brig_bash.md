@@ -1,5 +1,5 @@
 ---
-ability_rank: 8
+ability_rank: 7
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-gets-knocked-down-too-late-when-punching-brigs-bash/996300
 credit: The Hydra List
 heroes: Brigitte
@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/brig-bash/
 short_name: Brig bash late stalemate
-total_rank: 13
+total_rank: 12
 youtube_link: https://youtu.be/6RJNTK5u7JY
 ---
 

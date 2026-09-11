@@ -6,3 +6,20 @@ AI was and is used to help with website styling and some components of Jekyll, a
 
 # Structure
 The .md files in both _bugs and _heroes are generated automatically by my script and are not meant to be interacted with. I will change this and make the script public in the future.
+
+# TODO
+
+0. make mobile-friendly
+1. make sorting work on /bugs/*
+2. unreported bugs:
+    1. hydra the rooted effect
+    2. Junkrat trap not working on doom in punch
+3. unsolved bugs:
+    1. punch pushing ppl when cancelled
+    2. some knockbacks overriding punch knockbacks
+    3. wide hitbox during punch (?)
+4. intended bugs:
+    1. abilities in stun
+    2. dva thing
+    3. maybe that one thing where u ult and die but replay code shows u didnt ult
+

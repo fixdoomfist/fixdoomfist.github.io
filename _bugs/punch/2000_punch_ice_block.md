@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/ice-block/
 short_name: Mei ice block phase-through
-total_rank: 20
+total_rank: 21
 youtube_link: https://youtu.be/qE4XrJI7NtI
 ---
 

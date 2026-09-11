@@ -1,5 +1,5 @@
 ---
-ability_rank: 4
+ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-only-block-illari-ult-under-certain-conditions/985259
 credit: The Hydra List
 heroes: Illari
@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/illari-ult/
 short_name: Unblockable Illari ult
-total_rank: 7
+total_rank: 6
 youtube_link: https://youtu.be/IDVSBzKArts
 ---
 

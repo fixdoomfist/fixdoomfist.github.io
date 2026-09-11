@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/slam/close-to-ice-wall/
 short_name: Slam no-regs inside of Ice Wall
-total_rank: 11
+total_rank: 10
 youtube_link: https://youtu.be/kOoKT5trzxU
 ---
 

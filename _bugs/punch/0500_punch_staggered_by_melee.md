@@ -1,5 +1,5 @@
 ---
-ability_rank: 3
+ability_rank: 2
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-rocket-punch-acceleration-gets-staggered-by-melee/1017899
 credit: Goose
 heroes: All heroes
@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/staggered-by-melee/
 short_name: Punch momentum staggered by melee
-total_rank: 5
+total_rank: 4
 youtube_link: https://youtu.be/70vzYny6KNw
 ---
 

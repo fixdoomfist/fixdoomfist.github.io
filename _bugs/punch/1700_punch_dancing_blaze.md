@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/dancing-blaze/
 short_name: The rooted effect and it's consequences
-total_rank: 17
+total_rank: 18
 youtube_link: https://youtu.be/TtX_F4ewYV8
 ---
 

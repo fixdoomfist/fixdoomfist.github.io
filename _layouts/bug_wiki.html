@@ -23,12 +23,19 @@
             {% else %}
                 <li>This bug is not reported on The Hydra List.</li>
             {% endif %}
-            <li>Heroes that can apply: {% for hero in heroes %}<a href="/heroes/{{hero}}/">{{hero}}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.</li>
-            {% for report in site.data.reports %}
-                <a href="{{ report }}">Report {{ forloop.index }}</a>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-            <li>Forum bug report(s): {% for report in reports %}<a href="{{ report }}">Report #{{ forloop.index }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.</li>
-            <li>This bug is ranked <span class="accent">#{{page.ability_rank}}</span> in this ability's category and <span class="accent">#{{page.total_rank}}</span> in total.</li>
+            {% if heroes contains "All heroes" %}
+                <li>Heroes that can apply: <a href="/heroes/">{{heroes}}</a></li>
+            {% else %}
+                <li>Heroes that can apply: {% for hero in heroes %}<a href="/heroes/{{hero}}/">{{hero}}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.</li>
+            {% endif %}
+            {% if reports %}
+                <li>Forum bug report(s): {% for report in reports %}<a href="{{ report }}">Report #{{ forloop.index }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.</li>
+            {% endif %}
+            {% if page.total_rank %}
+                <li>This bug is ranked <span class="accent">#{{page.ability_rank}}</span> in this ability's category and <span class="accent">#{{page.total_rank}}</span> in total.</li>
+            {% else %}
+                <li>This bug is ranked <span class="accent">#{{page.ability_rank}}</span> in this ability's category.</li>
+            {% endif %}
             <div class="separator"><h3>Videos</h3></div>
             <div class="video_list">
                 {% for link in page.youtube_link %}

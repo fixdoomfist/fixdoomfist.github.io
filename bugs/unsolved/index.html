@@ -1,6 +1,6 @@
 ---
 layout: null
-title: FixDoomfist | Bugs | Misc
+title: FixDoomfist | Bugs | Unsolved
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ title: FixDoomfist | Bugs | Misc
     <body>
         <div class="columns">
             {% for bug in site.bugs %}
-                {% if bug.path contains '_bugs/misc/' %}
+                {% if bug.path contains '_bugs/unsolved/' %}
                     <a href="{{bug.permalink}}">
                         {% assign hero_count = bug.heroes | uniq | size %}
                         <div class="card">
@@ -23,7 +23,11 @@ title: FixDoomfist | Bugs | Misc
                                 {% if hero_count != 1 %}
                                     <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
                                 {% else %}
-                                    <h3 class="left"><span class="accent">{{hero_count}}</span> hero can apply</h3>
+                                    {% if bug.heroes contains "All heroes" %}
+                                        <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
+                                    {% else %}
+                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                    {% endif %}
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
                                 {% if bug.on_hydra %}

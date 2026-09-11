@@ -13,7 +13,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/on-platforms/
 short_name: Punch on rising platforms
-total_rank: 18
+total_rank: 19
 youtube_link: https://youtu.be/lSm6Euy1dis
 ---
 
