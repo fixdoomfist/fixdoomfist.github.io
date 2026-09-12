@@ -12,8 +12,7 @@ All the hero and bug pages are generated automatically using my own script in /s
 1. make sorting work on /bugs/*
 2. unreported bugs:
     1. hydra the rooted effect
-    2. Junkrat trap not working on doom in punch
-    3. leap slam on stairs lead to airslam
+    2. leap slam on stairs lead to airslam
 3. unsolved bugs:
     1. punch pushing ppl when cancelled
     2. some knockbacks overriding punch knockbacks
