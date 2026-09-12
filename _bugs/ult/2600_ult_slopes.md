@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/ult/slopes/
 short_name: Slowdown when moving up stairs in ult
-total_rank: 26
+total_rank: 27
 youtube_link: https://youtu.be/7xBk6NUwx2E
 ---
 

@@ -18,6 +18,12 @@ body {
     color: $color-text-dt;
 }
 
+.mobile-only-top {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
 .top-section {
     flex: 5;
     display: flex;
@@ -82,4 +88,35 @@ a {
 
 img[data-set-theme] {
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .columns > *:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 0.6rem);
+    }
+
+    .mobile-only-top {
+        display: none;
+    }
 }

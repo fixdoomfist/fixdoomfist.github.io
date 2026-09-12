@@ -81,7 +81,7 @@
 - name: Junkrat
   portrait: /assets/images/heroes/Junkrat.png
   role: damage
-  bug_count: 1
+  bug_count: 2
 - name: Juno
   portrait: /assets/images/heroes/Juno.png
   role: support

@@ -1,5 +1,5 @@
 ---
-ability_rank: 16
+ability_rank: 17
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-animation-issues/1030334
 credit: Daavel
 heroes: Doomfist
@@ -8,7 +8,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/animations/
 short_name: Animation issues
-total_rank: 29
+total_rank: 30
 youtube_link: https://youtu.be/dqilQxpZhco
 ---
 

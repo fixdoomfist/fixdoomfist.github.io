@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/block/magma-skin/
 short_name: Magma skin vfx is too bright
-total_rank: 28
+total_rank: 29
 youtube_link: https://youtu.be/RaGr6jMW7jM
 ---
 

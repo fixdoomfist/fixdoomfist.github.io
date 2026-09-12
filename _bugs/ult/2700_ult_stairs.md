@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/ult/stairs/
 short_name: Stuck on slopes in ult
-total_rank: 27
+total_rank: 28
 youtube_link: https://youtu.be/8_BuOFEq6Sc
 ---
 
