@@ -17,6 +17,7 @@ All the hero and bug pages are generated automatically using my own script in /s
     1. punch pushing ppl when cancelled
     2. some knockbacks overriding punch knockbacks
     3. wide hitbox during punch (?)
+    4. that one bap perk thing where he cancels punch momentum
 4. intended bugs:
     1. abilities in stun
     2. dva thing

@@ -1,5 +1,5 @@
 ---
-ability_rank: 5
+ability_rank: 4
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist%E2%80%99s-punch-momentum-can-be-overridden-cont/1001227
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-momentum-gets-overridden-by-some-abilities/993286

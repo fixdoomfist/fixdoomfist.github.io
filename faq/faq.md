@@ -6,8 +6,6 @@ permalink: /faq/
 
 {% assign stats = site.data.stats %}
 
-{{stats.bug_count}}
-
 # When were the bugs last tested?
 
 67/67/6967

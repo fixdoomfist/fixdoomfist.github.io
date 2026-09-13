@@ -1,5 +1,5 @@
 ---
-ability_rank: 6
+ability_rank: 7
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-magma-titan-skin-blinds-the-player-when-blocking/996301
 credit: Goose
 heroes:

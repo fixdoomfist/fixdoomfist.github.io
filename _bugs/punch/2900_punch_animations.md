@@ -1,5 +1,5 @@
 ---
-ability_rank: 17
+ability_rank: 16
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-animation-issues/1030334
 credit: Daavel
 heroes: Doomfist

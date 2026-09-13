@@ -1,5 +1,5 @@
 ---
-ability_rank: 15
+ability_rank: 14
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-be-stunned-shortly-after-canceling-his-punch/991112
 credit: The Hydra List
 heroes: Doomfist

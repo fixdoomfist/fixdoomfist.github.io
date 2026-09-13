@@ -1,5 +1,5 @@
 ---
-ability_rank: 5
+ability_rank: 6
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-cooldown-does-not-reset-on-being-empowered/1014811
 credit: Goose
 heroes:

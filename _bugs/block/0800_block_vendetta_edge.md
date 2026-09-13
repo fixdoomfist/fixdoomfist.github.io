@@ -1,5 +1,5 @@
 ---
-ability_rank: 4
+ability_rank: 5
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-fully-block-vendettas-projected-edge/1001239
 credit: Goose
 heroes: Vendetta

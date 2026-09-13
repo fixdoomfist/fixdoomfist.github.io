@@ -1,5 +1,5 @@
 ---
-ability_rank: 11
+ability_rank: 10
 bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-punch-knockback-stops-on-invisible-walls-cont/1038153
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-rocket-punch-knockback-stops-on-invisible-walls/1029263

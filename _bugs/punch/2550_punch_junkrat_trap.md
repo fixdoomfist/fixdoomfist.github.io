@@ -1,5 +1,5 @@
 ---
-ability_rank: 16
+ability_rank: 15
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-punch-straight-through-junkrats-trap/1038284
 credit: Goose
 heroes: Junkrat
