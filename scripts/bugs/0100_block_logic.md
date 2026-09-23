@@ -20,7 +20,7 @@ short_name: "Inconsistent damage origin"
 on_hydra: true
 ---
 
-The logic behind the game deciding which damage is blocked by the Doomfist and which is not is extremely inconsistent between specific instances. Some abilities are only blocked when the player is actively looking at the character that casted them, even if the point where the ability landed (later 'the origin point' or 'center') is behind Doomfist.
+The logic of the game determining which damage is blocked by Doomfist and which is not is extremely inconsistent in certain instances. In some cases, abilities are only blocked when the player is facing the character that cast them, even if the point where the ability landed (later referred to as 'the origin point' or 'center') is behind Doomfist.
 
 Ana has two bugged interactions:
 1. Primary fire. The damage is only blocked if the Doomfist actively looks at Ana. This includes the damage over time, which means that the player can be shot in the back, then look at Ana while the damage is being done, and block most of it.

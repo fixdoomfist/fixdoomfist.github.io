@@ -14,4 +14,4 @@ on_hydra: true
 
 Thanks to `itztonii` for providing a fresh clip with the replay code.
 
-This bug remained a mystery for quite some time, but turns out it’s extremely easy to replicate. When you get empowered punch (i.e. the charge bar overfills on the damage) by an ability that stuns you (i.e. Sigma rock or Orisa javelin) and hold the Rocket Punch button at the same time, Rocket Punch goes on cooldown instead of it being reset.
+This bug has been a mystery for some time, but it turns out that it can be easily replicated. When you receive empowered punch (i.e., the charge bar overfills due to damage) from an ability that stuns you (i.e., Sigma's rock or Orisa's javelin), and hold down the Rocket Punch button simultaneously, once you get stunned, Rocket Punch goes on cooldown instead of being reset.

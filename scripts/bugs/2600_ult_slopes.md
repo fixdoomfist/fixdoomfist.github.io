@@ -10,4 +10,4 @@ on_hydra: true
 
 Doomfist is unable to go over some elevated floors, even though they can be walked over without jumping.
 
-Most of these instances can be avoided by going at the obstacle at an odd angle or using top-down view, but there is a particularly difficult doorway in King’s Row, so much so that there is a completely separate entry for it in the buglist.
+Many of these situations can be avoided by approaching the obstacle at an narrow angle or using a top-down view, but there is a particularly annoying doorway in King's Row with this exact issue, to the extent that it has its own separate entry in the bug list.

@@ -14,4 +14,4 @@ short_name: "Slam no-regs on rising platforms"
 on_hydra: true
 ---
 
-Doomfist is unable to hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless you land right in front of the target.
+Doomfist cannot hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless he lands directly in front of the target.

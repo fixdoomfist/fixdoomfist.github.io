@@ -8,4 +8,4 @@ short_name: "Brig bash late stalemate"
 on_hydra: true
 ---
 
-When Doomfist punches Brigitte, and she uses Shield Bash, they both get knocked down. That’s intended behavior and how the game should work. But, for some reason, Brigitte is the only character with this kind of “stalemate” mechanic, that is able to proc her ability before getting stunned. In other words, Doomfist gets knocked down after her ability has ended, and she is able to both deal damage and knock down Doomfist. This makes fighting Brigitte way more awkward than it should be.
+Doomfist is able to trigger a stalemate interaction with Brigitte well after her ability has been casted, during the ending frames of her dealing damage animation. In other words, Doomfist gets knocked down after Brig's Bash has ended, and she is able to both deal damage and knock down Doomfist.

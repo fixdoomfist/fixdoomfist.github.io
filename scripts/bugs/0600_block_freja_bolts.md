@@ -11,4 +11,4 @@ short_name: "Unblockable Freja bolts"
 on_hydra: true
 ---
 
-Since Freja came out, Doomfist has not been able to consistently block Freja bolt explosion damage. This behavior is completely unlike all other “stick” interactions, like Echo bombs or Tracer ultimate. The game blocks the damage based on where exactly Doomfist is hit.
+Since Freja was released, Doomfist has not been able to consistently block Freja's bolt explosion damage. This behavior differs from all other "stick" interactions, such as Echo bombs or Tracer's ultimate, as the game blocks the damage regardless of where exactly Doomfist is hit.
