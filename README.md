@@ -5,7 +5,7 @@ The purpose of this website is to spread awareness of gameplay issues that affec
 AI was and is used to help with website styling and some components of Jekyll, as I don't have enough experience to do it in reasonable time without it. AI is **NOT** used in any aspects of bug research, writeup etc. English is not my first language, any help with grammar is appreciated.
 
 # Structure
-All the hero and bug pages are generated automatically using my own script in /scripts/. To add a bug you add it to the folder /scritps/bugs/ with all the necessary information and run the script. It should be (ID)_(CATEGORY)_(NAME).md, with ID being how gamebreaking it is (the higher the more).
+All the hero and bug pages are generated automatically using my own script in /scripts/. To add a bug you add it to the folder /scritps/bugs/ with all the necessary information and run the script. It should be (ID)\_(CATEGORY)\_(NAME).md, with ID being how gamebreaking it is (the higher the more).
 
 # TODO
 
