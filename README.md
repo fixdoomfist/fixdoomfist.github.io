@@ -9,7 +9,7 @@ All the hero and bug pages are generated automatically using my own script in /s
 
 # TODO
 
-1. make sorting work on /bugs/*
+1. do something about the last child if theres an odd amount of bugs in /bugs/*
 2. unreported bugs:
     1. hydra the rooted effect
     2. leap slam on stairs lead to airslam
@@ -23,3 +23,6 @@ All the hero and bug pages are generated automatically using my own script in /s
     2. dva thing
     3. maybe that one thing where u ult and die but replay code shows u didnt ult
 
+# Credits
+
+Big thanks to TeKrop for making overfast-api. My script uses it to automatically get up-to-date information about Overwatch heroes, including their portraits. Their Github: https://github.com/TeKrop/overfast-api
