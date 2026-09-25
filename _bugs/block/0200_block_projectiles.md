@@ -7,6 +7,7 @@ heroes:
 - Junkrat
 - Hanzo
 - Mizuki
+heroes_affected: 4
 id: '0200'
 last_tested: 12/08/26
 layout: bug_wiki
@@ -17,6 +18,6 @@ total_rank: 2
 youtube_link: https://youtu.be/Cbi0p02BoMU
 ---
 
-When projectiles bounce off a wall and hit a blocking Doomfist, the game seems to run a simple calculation to decide if the damage should be blocked or not. It takes the angle at which the projectile bounced off the wall and looks if that angle lands in the block line-of-sight. If it doesn’t, the game assumes that the projectile hit Doomfist in the back, and the damage is not blocked.
+When projectiles bounce off a wall and hit a blocking Doomfist, the game appears to use a simple calculation to determine if the damage should be blocked or not. It checks the angle at which the projectile bounced off the wall and looks to see if that angle falls within the block line-of-sight. If it does not, the game assumes that the projectile hit Doomfist from behind, and the damage is not blocked.
 
-However, this simple calculation does not consider hits directly on the Doomfist’s block at steep angles. This leads to characters with projectile-based weapons being able to completely ignore Power Block and deal full damage head-on.
+However, this simple calculation does not account for hits directly on Doomfist's block at steep angles. This allows characters with projectile-based weapons to bypass Power Block and deal full damage head-on.

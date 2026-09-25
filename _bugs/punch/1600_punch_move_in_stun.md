@@ -3,6 +3,7 @@ ability_rank: 9
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-allows-targets-to-move-before-stun/999438
 credit: The Hydra List
 heroes: All heroes
+heroes_affected: 53
 id: '1600'
 last_tested: 12/08/26
 layout: bug_wiki

@@ -9,6 +9,7 @@ credit: Goose
 heroes:
 - Ashe
 - Freja
+heroes_affected: 2
 id: '1000'
 last_tested: 12/08/26
 layout: bug_wiki

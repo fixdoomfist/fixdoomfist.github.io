@@ -3,6 +3,7 @@ ability_rank: 1
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-slam-is-unable-to-hit-targets-close-to-ice-wall/992815
 credit: The Hydra List
 heroes: Mei
+heroes_affected: 1
 id: '1100'
 last_tested: 12/08/26
 layout: bug_wiki

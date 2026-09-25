@@ -3,6 +3,7 @@ ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-is-actually-spider-man-high-priority/1038166
 credit: Goose
 heroes: Doomfist
+heroes_affected: 1
 id: '0010'
 layout: bug_wiki
 on_hydra: false
@@ -13,6 +14,6 @@ youtube_link:
 - https://youtu.be/4Mjrs8SEDb8
 ---
 
-There is a spot where you just get stuck with basically nothing and that spot is already reported. But, in the second vid, there are two different clips almost half a year apart where people get stuck in ult for no reason. I have not been able to replicate this for the LIFE of me. Probably tried for close to 10 hours. No idea what to do yet.
+There is a spot where players get stuck with no apparent reason, and this has already been reported. However, in the second video, there are two different clips from almost half a year apart where players get in ult for no reason. I have not been able to replicate this issue for the LIFE of me. Probably tried for more than 15 hours at this point. No idea.
 
-I believe this bug is connected with elevation changes and/or crouching in some way. In the bug report there is a spot where you can consistently get stuck, and you instantly become unstuck if you crouch or slam, so it's probably something with that.
+I believe this bug is connected with elevation changes and/or crouching in some way. In the bug report, there is a specific spot where players can consistently get stuck, and they instantly become unstuck if they crouch or slam.

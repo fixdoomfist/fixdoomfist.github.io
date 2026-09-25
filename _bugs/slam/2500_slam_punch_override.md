@@ -3,6 +3,7 @@ ability_rank: 4
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-own-slam-overrides-rocket-punch-knockback/1010751
 credit: Goose
 heroes: Doomfist
+heroes_affected: 1
 id: '2500'
 last_tested: 12/08/26
 layout: bug_wiki

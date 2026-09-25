@@ -7,6 +7,7 @@ credit: The Hydra List
 heroes:
 - Lifeweaver
 - Mei
+heroes_affected: 2
 id: '1800'
 last_tested: 12/08/26
 layout: bug_wiki

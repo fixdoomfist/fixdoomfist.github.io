@@ -7,6 +7,7 @@ credit: The Hydra List
 heroes:
 - Lifeweaver
 - Mei
+heroes_affected: 2
 id: '1900'
 last_tested: 12/08/26
 layout: bug_wiki
@@ -19,4 +20,4 @@ youtube_link:
 - https://youtu.be/QQ81BkzoAwI
 ---
 
-Doomfist is unable to hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless you land right in front of the target.
+Doomfist cannot hit anyone with his Seismic Slam ability on floors that change elevation rapidly, unless he lands directly in front of the target.

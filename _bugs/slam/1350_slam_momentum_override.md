@@ -5,6 +5,7 @@ credit: Goose
 heroes:
 - Sigma
 - Orisa
+heroes_affected: 2
 id: '1350'
 layout: bug_wiki
 on_hydra: false

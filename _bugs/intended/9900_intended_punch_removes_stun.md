@@ -5,6 +5,7 @@ bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-cancels-abilities-like-a-stun/155417
 credit: Goose
 heroes: Doomfist
+heroes_affected: 1
 id: '9900'
 last_tested: 12/08/26
 layout: bug_wiki

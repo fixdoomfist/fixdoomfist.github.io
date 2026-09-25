@@ -10,6 +10,7 @@ heroes:
 - Baptiste
 - Baptiste
 - Mizuki
+heroes_affected: 4
 id: '1400'
 last_tested: 12/08/26
 layout: bug_wiki
@@ -26,7 +27,7 @@ youtube_link:
 
 Credit for most of the interaction is with The Hydra List.
 
-When Doomfist hits anyone with his Rocket Punch, all abilities that the hit character was casting are instantly canceled. This is intuitive. If you hit a Mercy that is trying to resurrect someone - the resurrect is canceled. Simple as. But some abilities are unable to be canceled, even though they should be.
+When Doomfist hits anyone with his Rocket Punch, all abilities that the hit character was casting are instantly canceled. This is intuitive. If you hit a Mercy who is trying to resurrect someone - the resurrect is canceled. Simple as. However, some abilities are unable to be canceled, even though they should be.
 
 The list includes:
 Winston (Melee in Primal), Soldier: 76 (Biotic Field), Baptiste (Regenerative Burst & Exo Boots), Mizuki (Ultimate).

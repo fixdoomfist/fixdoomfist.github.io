@@ -24,6 +24,7 @@ heroes:
 - Winston
 - Wrecking Ball
 - Wuyang
+heroes_affected: 20
 id: '0300'
 last_tested: 12/08/26
 layout: bug_wiki
@@ -34,7 +35,7 @@ total_rank: 3
 youtube_link: https://youtu.be/_3Vhii89xNk
 ---
 
-While some abilities like Brig’s Bash or Vendetta’s Overhead Slash can affect Doomfist’s momentum in almost any circumstance, the effect is quite negligible. But, when Doomfist is using Rocket Punch to go up stairs and slopes, the abilities start to tangibly affect the player’s momentum, to the point that a Brigitte’s Bash can completely override Rocket Punch’s movement long enough to change or hinder its trajectory.
+While some abilities like Brig's Whip or Vendetta's Dash can affect Doomfist's momentum in most situations, the effect is relatively minor. However, when Doomfist uses Rocket Punch to move up stairs and slopes, the abilities begin to have a more noticeable impact on the player's momentum. In some cases, they can even completely override Rocket Punch's movement for long enough to change or hinder its trajectory.
 
 The list:
 Anran's Inferno Rush, Ashe's Coach Gun, Bastion's A-36 Tactical Grenade, Brigitte's Whip Shot, Domina's Sonic Repulsors, Hazard's Jagged Wall, Illari's Outburst, Jetpack Cat's Purr, Lúcio's Soundwave, Mauga's Overrun, Orisa's Javelin Spin, Pharah's Concussive Blast, Reinhardt's Shield Slam, Roadhog's ult, Shion's Joyride, Vendetta's Whirlwind Dash, Venture's ult, Venture's melee, Winston's ult, Wuyang's Guardian Wave.

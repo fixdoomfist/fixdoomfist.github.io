@@ -4,6 +4,7 @@ bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-magma-titan-
 credit: Goose
 heroes:
 - Doomfist
+heroes_affected: 1
 id: '2800'
 last_tested: 12/08/26
 layout: bug_wiki

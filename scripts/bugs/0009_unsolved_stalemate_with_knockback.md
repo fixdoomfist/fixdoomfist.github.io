@@ -1,5 +1,7 @@
 ---
-youtube_link: https://youtu.be/ZB_r5uNyHR8, https://youtu.be/8CY6GL5jxeI
+youtube_link: 
+    - https://youtu.be/ZB_r5uNyHR8
+    - https://youtu.be/8CY6GL5jxeI
 heroes:
     - Reinhardt
     - Brigitte

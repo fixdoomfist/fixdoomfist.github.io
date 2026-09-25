@@ -3,6 +3,7 @@ ability_rank: 16
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-animation-issues/1030334
 credit: Daavel
 heroes: Doomfist
+heroes_affected: 1
 id: '2900'
 layout: bug_wiki
 on_hydra: true

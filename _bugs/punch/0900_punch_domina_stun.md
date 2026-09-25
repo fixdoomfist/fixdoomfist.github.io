@@ -3,6 +3,7 @@ ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-gets-stunned-by-domina-when-he-shouldnt/1004160
 credit: Goose
 heroes: Domina
+heroes_affected: 1
 id: 0900
 last_tested: 12/08/26
 layout: bug_wiki

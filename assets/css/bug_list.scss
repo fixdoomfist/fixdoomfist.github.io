@@ -14,20 +14,6 @@ body {
     gap: 1.2rem;
 }
 
-@media (max-width: 900px) {
-    .columns {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (min-width: 900px) {
-    .columns > *:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
-        justify-self: center;
-        width: calc(50% - 0.6rem);
-    }
-}
-
 .columns a {
     color: inherit;
     text-decoration: none;
@@ -51,7 +37,7 @@ body {
 
 .stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .left {
@@ -68,13 +54,156 @@ body {
     align-self: left;
 }
 
-.sort-importance {
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.sort-alphabetical {
+.controls-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: $color-text-dt;
+    width: fit-content;
+    margin: 0.5rem auto 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.3rem 0.3rem $color-background-dt;
+    align-items: center;
+    text-align: center;
+}
+
+.controls-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: $color-text-dt;
+    width: fit-content;
+    margin: 0.5rem auto 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.3rem 0.3rem $color-background-dt;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sort-option {
     display: none;
 }
 
+.category-option {
+    display: none;
+}
+
+label {
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+label:has(input:checked) {
+    color: $color-background-dt;
+}
+
+.border-middle {
+    border-left: 0.15rem solid $color-background-dt;
+    border-right: 0.15rem solid $color-background-dt;
+}
+
+.border-right {
+    border-right: 0.15rem solid $color-background-dt;
+}
+
+@media (max-width: 900px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        grid-template-columns: 1fr;
+    }
+
+    .controls-left {
+        width: 100%;
+    }
+
+    .controls-right {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .columns > *:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 0.6rem);
+    }
+}
+
+/* there is no god below this line. dont go further. */
+
+.punch,
+.slam,
+.block,
+.ult,
+.sort-importance,
+.sort-alphabetical,
 .sort-heroes-affected {
     display: none;
+}
+
+body:has(#punch:checked):has(#sort-importance-checkbox:checked)
+    a.punch.sort-importance {
+    display: revert;
+}
+
+body:has(#slam:checked):has(#sort-importance-checkbox:checked)
+    a.slam.sort-importance {
+    display: revert;
+}
+
+body:has(#block:checked):has(#sort-importance-checkbox:checked)
+    a.block.sort-importance {
+    display: revert;
+}
+
+body:has(#ult:checked):has(#sort-importance-checkbox:checked)
+    a.ult.sort-importance {
+    display: revert;
+}
+
+body:has(#punch:checked):has(#sort-alphabetical-checkbox:checked)
+    a.punch.sort-alphabetical {
+    display: revert;
+}
+
+body:has(#slam:checked):has(#sort-alphabetical-checkbox:checked)
+    a.slam.sort-alphabetical {
+    display: revert;
+}
+
+body:has(#block:checked):has(#sort-alphabetical-checkbox:checked)
+    a.block.sort-alphabetical {
+    display: revert;
+}
+
+body:has(#ult:checked):has(#sort-alphabetical-checkbox:checked)
+    a.ult.sort-alphabetical {
+    display: revert;
+}
+
+body:has(#punch:checked):has(#sort-heroes-affected-checkbox:checked)
+    a.punch.sort-heroes-affected {
+    display: revert;
+}
+
+body:has(#slam:checked):has(#sort-heroes-affected-checkbox:checked)
+    a.slam.sort-heroes-affected {
+    display: revert;
+}
+
+body:has(#block:checked):has(#sort-heroes-affected-checkbox:checked)
+    a.block.sort-heroes-affected {
+    display: revert;
+}
+
+body:has(#ult:checked):has(#sort-heroes-affected-checkbox:checked) 
+    a.ult.sort-heroes-affected {
+    display: revert;
 }

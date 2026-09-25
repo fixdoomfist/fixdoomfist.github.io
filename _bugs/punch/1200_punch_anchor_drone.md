@@ -3,6 +3,7 @@ ability_rank: 5
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-punch-gets-stuck-on-a-deploying-anchor-drone/1014103
 credit: Goose
 heroes: Sierra
+heroes_affected: 1
 id: '1200'
 last_tested: 12/08/26
 layout: bug_wiki
