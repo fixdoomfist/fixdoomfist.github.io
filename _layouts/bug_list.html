@@ -1,0 +1,104 @@
+---
+---
+<!-- yes i know this is incredibly messy and sorting could be done with javascript. but i hate javascript. yes thats my whole excuse -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        {% include theme.html %}
+        <link rel="stylesheet" href="{{'/assets/css/bug_list.css' | relative_url}}">
+    </head>
+    <body>
+        <div class="columns sort-importance">
+            {% for bug in site.bugs %}
+                {% if bug.path contains {{page.category}} %}
+                    <a href="{{bug.permalink}}">
+                        {% assign hero_count = bug.heroes | uniq | size %}
+                        <div class="card">
+                            <h1>{{bug.short_name}}</h1>
+                            <div class="stats">
+                                {% if hero_count != 1 %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
+                                {% else %}
+                                    {% if bug.heroes contains "All heroes" %}
+                                        <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
+                                    {% else %}
+                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                    {% endif %}
+                                {% endif %}
+                                <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
+                                {% if bug.on_hydra %}
+                                    <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% else %}
+                                    <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="columns sort-alphabetical">
+            {% assign sorted_bugs = site.bugs | sort: 'short_name' %}
+            {% for bug in sorted_bugs %}
+                {% if bug.path contains {{page.category}} %}
+                    <a href="{{bug.permalink}}">
+                        {% assign hero_count = bug.heroes | uniq | size %}
+                        <div class="card">
+                            <h1>{{bug.short_name}}</h1>
+                            <div class="stats">
+                                {% if hero_count != 1 %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
+                                {% else %}
+                                    {% if bug.heroes contains "All heroes" %}
+                                        <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
+                                    {% else %}
+                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                    {% endif %}
+                                {% endif %}
+                                <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
+                                {% if bug.on_hydra %}
+                                    <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% else %}
+                                    <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="columns sort-heroes-affected">
+            {% assign sorted_bugs = site.bugs | sort_explicit: 'heroes.size' %}
+            {% for bug in sorted_bugs %}
+                {% if bug.path contains {{page.category}} %}
+                    <a href="{{bug.permalink}}">
+                        {% assign hero_count = bug.heroes | uniq | size %}
+                        <div class="card">
+                            <h1>{{bug.short_name}}</h1>
+                            <div class="stats">
+                                {% if hero_count != 1 %}
+                                    <h3 class="left"><span class="accent">{{hero_count}}</span> heroes can apply</h3>
+                                {% else %}
+                                    {% if bug.heroes contains "All heroes" %}
+                                        <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
+                                    {% else %}
+                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                    {% endif %}
+                                {% endif %}
+                                <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
+                                {% if bug.on_hydra %}
+                                    <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
+                                {% else %}
+                                    <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </body>
+</html>

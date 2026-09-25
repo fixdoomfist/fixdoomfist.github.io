@@ -61,10 +61,20 @@ body {
 
 .center {
     grid-column: 2;
-    align-self: center;
 }
 
 .right {
     grid-column: 3;
     align-self: left;
+}
+
+.sort-importance {
+}
+
+.sort-alphabetical {
+    display: none;
+}
+
+.sort-heroes-affected {
+    display: none;
 }
