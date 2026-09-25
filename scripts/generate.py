@@ -14,7 +14,7 @@ from pathlib import Path
 root_dir = Path(__file__).resolve().parent.parent
 data_yaml = []
 hero_names = []
-files = sorted(glob.glob(f"{root_dir}/scripts/bugs/*"), key=lambda x: int(''.join(filter(str.isdigit, x)) or 0))
+files = sorted(glob.glob(f"{root_dir}/scripts/bugs/*"), key=lambda x: int(''.join(filter(str.isdigit, x)) or 0))  # im so fr idk what this does and i dont remember writing this. if it works it works ig
 unique_bug_count = len(files)
 total_bug_count = 0
 print("Connecting to overfast-api...")
@@ -48,6 +48,7 @@ print(f"Rebuilding hero pages...")
 for hero in data_yaml:
     filename = f"{root_dir}/_heroes/{hero['name']}.html"
     
+    # messy? yes. works? without a hitch
     page = \
 f"""---
 layout: hero_bugs
@@ -73,11 +74,16 @@ portrait: "{hero['portrait']}"
     for file in files:
         bug = open(file, "r").read()
         if bug.startswith('---'):
-            rest = bug.split('---')
-            yaml_data = yaml.safe_load(rest[1])
+            # splitting front matter and processing it as yaml
+            bug_text = bug.split('---')
+            yaml_data = yaml.safe_load(bug_text[1])
+            
+            # yes its messy. but it works so i dont careee i love it
             if hero['name'] in yaml_data['heroes']:
                 data_yaml[hero_names.index(hero['name'])]['bug_count'] += yaml_data['heroes'].count(hero['name'])
                 total_bug_count += yaml_data['heroes'].count(hero['name'])
+
+            # simple check for wrong hero names. this is how i found out that the wold "Soldier" is typed like that and not "Solider". Wrote it like "Solider" for my whole 18 years btw
             if type(yaml_data['heroes']) == str:
                 if yaml_data['heroes'] not in hero_names and yaml_data['heroes'] != "All heroes":
                     print("ALERM: ", yaml_data['heroes'])
@@ -101,6 +107,7 @@ for bug in bugs:
 
 print("Rebuilding bug pages...")
 
+# used for ranking
 count_dict = {
     "total": 0,
     "block": 0,
@@ -110,42 +117,55 @@ count_dict = {
     "intended": 0,
     "unsolved": 0,
 }
+
 for file in files:
     bug = open(file, "r").read()
     if bug.startswith('---'):
-        rest = bug.split('---')
-        yaml_data = yaml.safe_load(rest[1])
-        text = rest[2]
+        # splitting front matter and processing it as yaml
+        bug_text = bug.split('---')
+        yaml_data = yaml.safe_load(bug_text[1])
+        text = bug_text[2]
+
+        # splitting file name to get category and id
         file_split = file.split('/')
         file_name = file_split[-1]
         file_tags = file_name.split('_')
         file_id = file_tags[0]
         bugged_ability = file_tags[1]
         count_dict[bugged_ability] += 1
+
+        # permalink from category
         permalink_path_md = '-'.join(file_tags[2:])
         permalink_final = permalink_path_md.split(".")[0]
+
+        # adding yaml data that i cant be arsed to make in liquid (whole reason this script exists)
+        yaml_data['permalink'] = fr"/bugs/{bugged_ability}/{permalink_final}/"
+        yaml_data['id'] = file_id
+        yaml_data['layout'] = "bug_wiki"
+        yaml_data['ability_rank'] = count_dict[bugged_ability]
+        if type(yaml_data['heroes']) == str:
+            if yaml_data['heroes'] == "All heroes":
+                yaml_data['heroes_affected'] = hero_count
+            else:
+                yaml_data['heroes_affected'] = 1
+        else:
+            yaml_data['heroes_affected'] = len(set(yaml_data['heroes']))
+
+        # dont count bugs in these categories to the total count
         if bugged_ability not in ['intended', 'unsolved']:
             count_dict['total'] += 1
-            yaml_data['permalink'] = fr"/bugs/{bugged_ability}/{permalink_final}/"
-            yaml_data['id'] = file_id
-            yaml_data['layout'] = "bug_wiki"
             yaml_data['total_rank'] = count_dict['total']
-            yaml_data['ability_rank'] = count_dict[bugged_ability]
-            final_yaml = yaml.dump(yaml_data, allow_unicode=True, default_flow_style=False)
-            output = f"---\n{final_yaml}---{text}"
-        else:
-            yaml_data['permalink'] = fr"/bugs/{bugged_ability}/{permalink_final}/"
-            yaml_data['id'] = file_id
-            yaml_data['layout'] = "bug_wiki"
-            yaml_data['ability_rank'] = count_dict[bugged_ability]
-            final_yaml = yaml.dump(yaml_data, allow_unicode=True, default_flow_style=False)
-            output = f"---\n{final_yaml}---{text}"
+
+        final_yaml = yaml.dump(yaml_data, allow_unicode=True, default_flow_style=False)
+        output = f"---\n{final_yaml}---{text}"
+
+        # writing
         if os.path.isdir(fr'{root_dir}/_bugs/{bugged_ability}'):
             with open(fr'{root_dir}/_bugs/{bugged_ability}/{file_name}', 'w+') as f:
                 f.write(output)
         else:
             print(file, fr'{root_dir}/_bugs/{bugged_ability}/{file_name}')
-            raise "Dumbass path does not exist"
+            raise "Category does not have a dir in _bugs"
 
 print("Calculating absurd bug counts...")
 
