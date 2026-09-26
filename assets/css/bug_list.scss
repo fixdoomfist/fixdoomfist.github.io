@@ -3,8 +3,6 @@
 
 @import "color";
 
-@import "stats";
-
 @function f_wrap($list, $index) {
   @return nth($list, (($index) % length($list)) + 1);
 }
