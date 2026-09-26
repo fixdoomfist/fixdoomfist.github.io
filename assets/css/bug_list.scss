@@ -153,7 +153,6 @@ label:has(input:checked) {
 }
 
 /* there is no god below this line. dont go further. */
-/*     columns > .block.sort-importance:not(:has(~ .block.sort-importance)):nth-child(odd of .block.sort-importance) {  */
 
 @media (min-width: 900px) {
     @if $odd_category_count > 0 {

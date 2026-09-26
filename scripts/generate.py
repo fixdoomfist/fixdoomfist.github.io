@@ -210,7 +210,7 @@ f"""$bug-count: (
     ult: {count_dict['ult']},
 )
 
-$abilities: punch, block, slam, ult"""
+$abilities: punch, block, slam, ult;"""
 
 with open(fr'{root_dir}/_sass/stats.sass', 'w+') as f:
     f.write(bug_sass_data)
