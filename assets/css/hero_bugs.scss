@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 
 body {
   margin: 0;
@@ -30,7 +30,7 @@ a {
 }
 
 a:hover h2 {
-  color: $color-background-dt;
+  color: $color-text-red;
 }
 
 .bug_card {

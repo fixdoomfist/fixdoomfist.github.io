@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 
 body {
     display: flex;
@@ -90,7 +90,7 @@ iframe {
 
 .title {
     display: inline-block;
-    color: $color-background-dt;
+    color: $color-text-red;
     font-weight: bold;
 }
 
@@ -105,10 +105,10 @@ a {
 }
 
 a:hover {
-    color: $color-background-dt;
+    color: $color-text-red;
 }
 
 .accent {
-    color: $color-background-dt;
+    color: $color-text-red;
     font-weight: bold;
 }

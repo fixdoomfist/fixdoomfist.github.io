@@ -1,6 +1,5 @@
 ---
 youtube_link:
-    - https://youtu.be/oIG6-oU4bjE
     - https://youtu.be/Q1SljoO8KAM
     - https://youtu.be/GnDciOLXoIE
 bug_report:

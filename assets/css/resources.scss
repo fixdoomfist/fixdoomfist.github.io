@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 
 html, body {
     margin: 0;
@@ -24,13 +24,13 @@ body {
 .box a {
     color: $color-text-dt;
     text-decoration: underline;
-    text-decoration-color: $color-background-dt;
+    text-decoration-color: $color-text-red;
 }
 
 .box a:hover {
-    color: $color-background-dt;
+    color: $color-text-red;
 }
 
 .accent {
-    color: $color-background-dt;
+    color: $color-text-red;
 }

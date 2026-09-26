@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 @import "stats";
 
 @function f_wrap($list, $index) {
@@ -51,12 +51,11 @@ body {
     padding: 0 1rem;
     height: 100%;
     color: $color-text-dt;
-    font-size: 1.1rem;
     box-shadow: 0 0 0.3rem 0.3rem $color-background-dt;
 }
 
 .accent {
-    color: $color-background-dt;
+    color: $color-text-red;
 }
 
 .stats {
@@ -122,7 +121,7 @@ label {
 }
 
 label:has(input:checked) {
-    color: $color-background-dt;
+    color: $color-text-red;
 }
 
 .border-middle {

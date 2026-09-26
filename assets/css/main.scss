@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 
 html, body {
     height: 100vh;
@@ -28,7 +28,7 @@ body {
     flex: 5;
     display: flex;
     justify-content: center;
-    box-shadow: inset 0 0 60px 10px $color-background-dt;
+    box-shadow: inset 0 0 20px 10px $color-background-dt;
 }
 
 .middle-section {
@@ -51,7 +51,7 @@ a {
     justify-content: center;
     align-items: center;
     border: 1px solid $color-background-dt;
-    box-shadow: inset 0 0 60px 10px $color-background-dt;
+    box-shadow: inset 0 0 20px 10px $color-background-dt;
     text-align: center;
     color: $color-text-dt;
     text-decoration: none;

@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "color";
+@import "style";
 
 body {
     background: $color-foreground-dt;
@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: $color-background-dt;
+    color: $color-text-red;
     padding: 3rem 0 0 0;
 }
 
