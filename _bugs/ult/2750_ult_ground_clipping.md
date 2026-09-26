@@ -7,7 +7,7 @@ heroes_affected: 1
 id: '2750'
 last_tested: 12/08/26
 layout: bug_wiki
-on_hydra: false
+on_hydra: true
 permalink: /bugs/ult/ground-clipping/
 short_name: Camera clips into ground (funny one)
 total_rank: 31

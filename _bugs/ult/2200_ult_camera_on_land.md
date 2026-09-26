@@ -9,7 +9,7 @@ heroes_affected: 1
 id: '2200'
 last_tested: 12/08/26
 layout: bug_wiki
-on_hydra: false
+on_hydra: partly
 permalink: /bugs/ult/camera-on-land/
 short_name: Camera lock on landing in ult
 total_rank: 23

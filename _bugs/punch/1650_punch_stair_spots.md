@@ -9,7 +9,7 @@ heroes_affected: 53
 id: '1650'
 last_tested: 12/08/26
 layout: bug_wiki
-on_hydra: false
+on_hydra: partly
 permalink: /bugs/punch/stair-spots/
 short_name: Invisible walls a.k.a. stair spots
 total_rank: 16
