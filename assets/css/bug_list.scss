@@ -2,15 +2,7 @@
 ---
 
 @import "color";
-
-$bug-count: (
-    punch: 16,
-    block: 7,
-    slam: 4,
-    ult: 6,
-);
-
-$abilities: punch, block, slam, ult;
+@import "stats";
 
 @function f_wrap($list, $index) {
   @return nth($list, (($index) % length($list)) + 1);
