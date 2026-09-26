@@ -212,7 +212,7 @@ f"""$bug-count: (
 
 $abilities: punch, block, slam, ult;"""
 
-with open(fr'{root_dir}/_sass/stats.sass', 'w+') as f:
+with open(fr'{root_dir}/_sass/stats.scss', 'w+') as f:
     f.write(bug_sass_data)
 
 print("Done!")
