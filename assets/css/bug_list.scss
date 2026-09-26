@@ -2,6 +2,30 @@
 ---
 
 @import "color";
+@import "stats";
+
+@function f_wrap($list, $index) {
+  @return nth($list, (($index) % length($list)) + 1);
+}
+
+@function difference($list1, $list2) {
+    $result: ();
+    @each $item in $list1 {
+        @if index($list2, $item) == null {
+            $result: append($result, $item);
+        }
+    }
+    @return $result;
+}
+
+$odd_category_count: 0;
+$odd_categories: ();
+@each $key, $value in $bug-count {
+    @if $value % 2 == 1 {
+        $odd_category_count: $odd_category_count + 1;
+        $odd_categories: append($odd_categories, $key);
+    }
+}
 
 body {
     background: $color-foreground-dt;
@@ -128,15 +152,223 @@ label:has(input:checked) {
     }
 }
 
+/* there is no god below this line. dont go further. */
+/*     columns > .block.sort-importance:not(:has(~ .block.sort-importance)):nth-child(odd of .block.sort-importance) {  */
+
 @media (min-width: 900px) {
+    @if $odd_category_count > 0 {
+        @if $odd_category_count == 1 {
+            $category: nth($odd_categories, 1);
+            $category_index: index($abilities, $category);
+            $b: f_wrap($abilities, $category_index + 1);
+            $c: f_wrap($abilities, $category_index + 2);
+            $d: f_wrap($abilities, $category_index + 3);
+            
+            body:has(#sort-importance-checkbox:checked) {
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category}):not(:has(~ .sort-importance:is(.#{$category}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category}, .#{$b}):not(:has(~ .sort-importance:is(.#{$category}, .#{$b}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category}, .#{$c}):not(:has(~ .sort-importance:is(.#{$category}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category}, .#{$b}, .#{$c}):not(:has(~ .sort-importance:is(.#{$category}, .#{$b}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category}, .#{$b}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category}, .#{$b}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category}, .#{$c}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category}, .#{$c}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+            
+            body:has(#sort-alphabetical-checkbox:checked) {
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category}):not(:has(~ .sort-alphabetical:is(.#{$category}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category}, .#{$b}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$b}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category}, .#{$c}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$c}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category}, .#{$c}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$c}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+            
+            body:has(#sort-heroes-affected-checkbox:checked) {
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category}):not(:has(~ .sort-heroes-affected:is(.#{$category}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category}, .#{$b}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$b}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category}, .#{$c}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$c}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$c}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):not(:has(#{'#' + $b}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category}, .#{$c}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$c}, .#{$d}))),
+                &:has(#{'#' + $category}:checked):has(#{'#' + $b}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category}, .#{$b}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+        } @else if $odd_category_count == 2 {
+            $category1: nth($odd_categories, 1);
+            $category2: nth($odd_categories, 2);
+            $other-categories: difference($abilities, $odd_categories);
+            $c: nth($other-categories, 1);
+            $d: nth($other-categories, 2);
+
+            body:has(#sort-importance-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category1}):not(:has(~ .sort-importance:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category1}, .#{$c}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$c}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category1}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category1}, .#{$c}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$c}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category2}):not(:has(~ .sort-importance:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category2}, .#{$c}):not(:has(~ .sort-importance:is(.#{$category2}, .#{$c}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category2}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category2}, .#{$c}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category2}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-alphabetical-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category1}):not(:has(~ .sort-alphabetical:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category1}, .#{$c}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$c}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category1}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category1}, .#{$c}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$c}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category2}):not(:has(~ .sort-alphabetical:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category2}, .#{$c}):not(:has(~ .sort-alphabetical:is(.#{$category2}, .#{$c}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category2}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category2}, .#{$c}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category2}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-heroes-affected-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category1}):not(:has(~ .sort-heroes-affected:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category1}, .#{$c}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$c}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$c}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$c}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category2}):not(:has(~ .sort-heroes-affected:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category2}, .#{$c}):not(:has(~ .sort-heroes-affected:is(.#{$category2}, .#{$c}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $c}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category2}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $c}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category2}, .#{$c}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category2}, .#{$c}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+        } @else if $odd_category_count == 3 {
+            $category1: nth($odd_categories, 1);
+            $category2: nth($odd_categories, 2);
+            $category3: nth($odd_categories, 3);
+            $other-categories: difference($abilities, $odd_categories);
+            $d: nth($other-categories, 1);
+
+            body:has(#sort-importance-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category1}):not(:has(~ .sort-importance:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category1}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category2}):not(:has(~ .sort-importance:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category2}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category3}):not(:has(~ .sort-importance:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category3}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category3}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-alphabetical-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category1}):not(:has(~ .sort-alphabetical:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category1}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category2}):not(:has(~ .sort-alphabetical:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category2}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category3}):not(:has(~ .sort-alphabetical:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category3}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category3}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-heroes-affected-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category1}):not(:has(~ .sort-heroes-affected:is(.#{$category1}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category2}):not(:has(~ .sort-heroes-affected:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category2}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category2}, .#{$d}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category3}):not(:has(~ .sort-heroes-affected:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category3}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category3}, .#{$d}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $d}:checked)) .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $d}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}, .#{$d}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+        } @else if $odd_category_count == 4 {
+            $category1: nth($odd_categories, 1);
+            $category2: nth($odd_categories, 2);
+            $category3: nth($odd_categories, 3);
+            $category4: nth($odd_categories, 4);
+
+            body:has(#sort-importance-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-importance:is(.#{$category1}):not(:has(~ .sort-importance:is(.#{$category1}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-importance:is(.#{$category2}):not(:has(~ .sort-importance:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-importance:is(.#{$category3}):not(:has(~ .sort-importance:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-importance:is(.#{$category4}):not(:has(~ .sort-importance:is(.#{$category4}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category4}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$category2}, .#{$category4}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-importance:is(.#{$category1}, .#{$category3}, .#{$category4}):not(:has(~ .sort-importance:is(.#{$category1}, .#{$category3}, .#{$category4}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-importance:is(.#{$category2}, .#{$category3}, .#{$category4}):not(:has(~ .sort-importance:is(.#{$category2}, .#{$category3}, .#{$category4}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-alphabetical-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-alphabetical:is(.#{$category1}):not(:has(~ .sort-alphabetical:is(.#{$category1}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-alphabetical:is(.#{$category2}):not(:has(~ .sort-alphabetical:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-alphabetical:is(.#{$category3}):not(:has(~ .sort-alphabetical:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-alphabetical:is(.#{$category4}):not(:has(~ .sort-alphabetical:is(.#{$category4}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category4}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$category2}, .#{$category4}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-alphabetical:is(.#{$category1}, .#{$category3}, .#{$category4}):not(:has(~ .sort-alphabetical:is(.#{$category1}, .#{$category3}, .#{$category4}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-alphabetical:is(.#{$category2}, .#{$category3}, .#{$category4}):not(:has(~ .sort-alphabetical:is(.#{$category2}, .#{$category3}, .#{$category4}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+
+            body:has(#sort-heroes-affected-checkbox:checked) {
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-heroes-affected:is(.#{$category1}):not(:has(~ .sort-heroes-affected:is(.#{$category1}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):not(:has(#{'#' + $category4}:checked)) .sort-heroes-affected:is(.#{$category2}):not(:has(~ .sort-heroes-affected:is(.#{$category2}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-heroes-affected:is(.#{$category3}):not(:has(~ .sort-heroes-affected:is(.#{$category3}))),
+                &:not(:has(#{'#' + $category1}:checked)):not(:has(#{'#' + $category2}:checked)):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-heroes-affected:is(.#{$category4}):not(:has(~ .sort-heroes-affected:is(.#{$category4}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):not(:has(#{'#' + $category4}:checked)) .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category3}))),
+                &:has(#{'#' + $category1}:checked):has(#{'#' + $category2}:checked):not(:has(#{'#' + $category3}:checked)):has(#{'#' + $category4}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category4}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$category2}, .#{$category4}))),
+                &:has(#{'#' + $category1}:checked):not(:has(#{'#' + $category2}:checked)):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-heroes-affected:is(.#{$category1}, .#{$category3}, .#{$category4}):not(:has(~ .sort-heroes-affected:is(.#{$category1}, .#{$category3}, .#{$category4}))),
+                &:not(:has(#{'#' + $category1}:checked)):has(#{'#' + $category2}:checked):has(#{'#' + $category3}:checked):has(#{'#' + $category4}:checked) .sort-heroes-affected:is(.#{$category2}, .#{$category3}, .#{$category4}):not(:has(~ .sort-heroes-affected:is(.#{$category2}, .#{$category3}, .#{$category4}))) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 0.6rem)
+                }
+            }
+        }
+    }
+
     .columns > *:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         justify-self: center;
         width: calc(50% - 0.6rem);
     }
 }
-
-/* there is no god below this line. dont go further. */
 
 .punch,
 .slam,

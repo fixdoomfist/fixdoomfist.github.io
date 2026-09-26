@@ -201,4 +201,18 @@ bug_yaml_data = {
 with open(f'{root_dir}/_data/stats.yml', 'w') as f:
     yaml.dump(bug_yaml_data, f, allow_unicode=True, sort_keys=False)
 
+# making sass-available data
+bug_sass_data = \
+f"""$bug-count: (
+    punch: {count_dict['punch']},
+    block: {count_dict['block']},
+    slam: {count_dict['slam']},
+    ult: {count_dict['ult']},
+)
+
+$abilities: punch, block, slam, ult"""
+
+with open(fr'{root_dir}/_sass/stats.sass', 'w+') as f:
+    f.write(bug_sass_data)
+
 print("Done!")

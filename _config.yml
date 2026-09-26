@@ -6,7 +6,7 @@ collections:
     output: true
 
 sass:
-  silence_deprecations: ["import"]
+  silence_deprecations: ["import", "global-builtin"]
 
 plugins:
   - jekyll-redirect-from

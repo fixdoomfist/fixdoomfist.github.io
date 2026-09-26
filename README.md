@@ -9,15 +9,14 @@ All the hero and bug pages are generated automatically using my own script in /s
 
 # TODO
 
-1. do something about the last child if theres an odd amount of bugs in /bugs/*
-2. unreported bugs:
+1. unreported bugs:
     1. leap slam on stairs lead to airslam (waiting for feedback from creme)
-3. unsolved bugs:
+2. unsolved bugs:
     1. punch pushing ppl when cancelled
     2. some knockbacks overriding punch knockbacks
     3. wide hitbox during punch (?)
     4. that one bap perk thing where he cancels punch momentum
-4. intended bugs:
+3. intended bugs:
     1. maybe that one thing where u ult and die but replay code shows u didnt ult
 
 # Credits
