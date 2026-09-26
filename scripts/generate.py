@@ -208,7 +208,7 @@ f"""$bug-count: (
     block: {count_dict['block']},
     slam: {count_dict['slam']},
     ult: {count_dict['ult']},
-)
+);
 
 $abilities: punch, block, slam, ult;"""
 
