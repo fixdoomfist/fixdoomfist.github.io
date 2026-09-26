@@ -9,7 +9,7 @@ heroes: Doomfist
 credit: "The Hydra List"
 last_tested: 12/08/26
 short_name: "Camera lock on landing in ult"
-on_hydra: false
+on_hydra: partly
 ---
 
 If a Doomfist player lands on an "edge" (i.e. the player will begin falling once the landing animation ends), the player will be forced to face forward, and the camera will be locked in place until the landing animation ends. The direction the player looked during the landing animation is irrelevant; when the ultimate concludes, the player will be forced to look forward.

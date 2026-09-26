@@ -13,7 +13,7 @@
 - name: Baptiste
   portrait: /assets/images/heroes/Baptiste.png
   role: support
-  bug_count: 2
+  bug_count: 0
 - name: Bastion
   portrait: /assets/images/heroes/Bastion.png
   role: damage
@@ -21,7 +21,7 @@
 - name: Brigitte
   portrait: /assets/images/heroes/Brigitte.png
   role: support
-  bug_count: 3
+  bug_count: 2
 - name: Cassidy
   portrait: /assets/images/heroes/Cassidy.png
   role: damage
@@ -37,11 +37,11 @@
 - name: Doomfist
   portrait: /assets/images/heroes/Doomfist.png
   role: tank
-  bug_count: 11
+  bug_count: 10
 - name: D.Va
   portrait: /assets/images/heroes/D.Va.png
   role: tank
-  bug_count: 0
+  bug_count: 1
 - name: Echo
   portrait: /assets/images/heroes/Echo.png
   role: damage
@@ -73,7 +73,7 @@
 - name: Jetpack Cat
   portrait: /assets/images/heroes/Jetpack Cat.png
   role: support
-  bug_count: 2
+  bug_count: 1
 - name: Junker Queen
   portrait: /assets/images/heroes/Junker Queen.png
   role: tank
@@ -81,7 +81,7 @@
 - name: Junkrat
   portrait: /assets/images/heroes/Junkrat.png
   role: damage
-  bug_count: 2
+  bug_count: 4
 - name: Juno
   portrait: /assets/images/heroes/Juno.png
   role: support
@@ -137,7 +137,7 @@
 - name: Reinhardt
   portrait: /assets/images/heroes/Reinhardt.png
   role: tank
-  bug_count: 4
+  bug_count: 3
 - name: Roadhog
   portrait: /assets/images/heroes/Roadhog.png
   role: tank
@@ -161,7 +161,7 @@
 - name: 'Soldier: 76'
   portrait: '/assets/images/heroes/Soldier: 76.png'
   role: damage
-  bug_count: 1
+  bug_count: 0
 - name: Sombra
   portrait: /assets/images/heroes/Sombra.png
   role: damage
@@ -193,7 +193,7 @@
 - name: Winston
   portrait: /assets/images/heroes/Winston.png
   role: tank
-  bug_count: 2
+  bug_count: 1
 - name: Wrecking Ball
   portrait: /assets/images/heroes/Wrecking Ball.png
   role: tank

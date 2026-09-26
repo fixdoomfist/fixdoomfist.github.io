@@ -18,7 +18,9 @@
             {% assign heroes = page.heroes | uniq %}
             {% assign reports = page.bug_report %}
             <li>Bug initially reported by: {{page.credit}}.</li>
-            {% if page.on_hydra %}
+            {% if page.on_hydra == "partly" %}
+                <li>This bug is partly reported on The Hydra List.</li>
+            {% elsif page.on_hydra %}
                 <li>This bug is reported on The Hydra List.</li>
             {% else %}
                 <li>This bug is not reported on The Hydra List.</li>

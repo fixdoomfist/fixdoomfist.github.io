@@ -1,6 +1,6 @@
 ---
 layout: null
-title: FixDoomfist | Bugs | Intended
+title: FixDoomfist | Bugs | Hydra
 ---
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ title: FixDoomfist | Bugs | Intended
     <body>
         <div class="columns">
             {% for bug in site.bugs %}
-                {% if bug.path contains '_bugs/unsolved/' %}
+                {% if bug.on_hydra != true %}
                     <a href="{{bug.permalink}}">
                         {% assign hero_count = bug.heroes | uniq | size %}
                         <div class="card">

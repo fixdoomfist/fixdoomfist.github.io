@@ -1,5 +1,5 @@
 ---
-ability_rank: 13
+ability_rank: 12
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-goes-through-meis-ice-block/992282
 credit: The Hydra List
 heroes: Mei
@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/ice-block/
 short_name: Mei ice block phase-through
-total_rank: 21
+total_rank: 20
 youtube_link: https://youtu.be/qE4XrJI7NtI
 ---
 

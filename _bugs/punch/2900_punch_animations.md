@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/animations/
 short_name: Animation issues
-total_rank: 30
+total_rank: 33
 youtube_link: https://youtu.be/dqilQxpZhco
 ---
 

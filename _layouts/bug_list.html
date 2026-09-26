@@ -71,7 +71,9 @@
                                     {% endif %}
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
-                                {% if bug.on_hydra %}
+                                {% if bug.on_hydra == "partly" %}
+                                    <h3 class="right"><span class="accent">PARTLY</span> on Hydra</h3>
+                                {% elsif bug.on_hydra %}
                                     <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
                                 {% else %}
                                     <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
@@ -101,7 +103,9 @@
                                     {% endif %}
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
-                                {% if bug.on_hydra %}
+                                {% if bug.on_hydra == "partly" %}
+                                    <h3 class="right"><span class="accent">PARTLY</span> on Hydra</h3>
+                                {% elsif bug.on_hydra %}
                                     <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
                                 {% else %}
                                     <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>
@@ -131,7 +135,9 @@
                                     {% endif %}
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
-                                {% if bug.on_hydra %}
+                                {% if bug.on_hydra == "partly" %}
+                                    <h3 class="right"><span class="accent">PARTLY</span> on Hydra</h3>
+                                {% elsif bug.on_hydra %}
                                     <h3 class="right"><span class="accent">IS</span> on Hydra</h3>
                                 {% else %}
                                     <h3 class="right"><span class="accent">NOT</span> on Hydra</h3>

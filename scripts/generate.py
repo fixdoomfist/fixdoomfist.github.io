@@ -65,7 +65,13 @@ portrait: "{hero['portrait']}"
     {% assign bug_count = bug_count | plus: 1 %}
     <div class="separator"><span><b>{{bug_count}}</b></span></div>
         <div class='bug_card'>
-            <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            {% if bug.path contains '_bugs/intended/' %}
+                <a href="{{bug.permalink}}"><h2>[INTENDED] {{bug.short_name}}</h2></a>
+            {% elsif bug.path contains '_bugs/unsolved' %}
+                <a href="{{bug.permalink}}"><h2>[UNSOLVED] {{bug.short_name}}</h2></a>
+            {% else %}
+                <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            {% endif %}
             <p>{{bug.content | markdownify}}</p>
         </div>
     {% endif %}
@@ -77,9 +83,13 @@ portrait: "{hero['portrait']}"
             # splitting front matter and processing it as yaml
             bug_text = bug.split('---')
             yaml_data = yaml.safe_load(bug_text[1])
+            file_split = file.split('/')
+            file_name = file_split[-1]
+            file_tags = file_name.split('_')
+            bugged_ability = file_tags[1]
             
             # yes its messy. but it works so i dont careee i love it
-            if hero['name'] in yaml_data['heroes']:
+            if hero['name'] in yaml_data['heroes'] and bugged_ability not in ['intended', 'unsolved']:
                 data_yaml[hero_names.index(hero['name'])]['bug_count'] += yaml_data['heroes'].count(hero['name'])
                 total_bug_count += yaml_data['heroes'].count(hero['name'])
 

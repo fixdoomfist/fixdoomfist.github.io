@@ -9,19 +9,24 @@ bug_report:
     - https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-stun-allows-for-some-ability-usage/991362
 heroes:
     - Winston
+    - Echo
+    - Hanzo
+    - Hazard
     - "Soldier: 76"
     - Baptiste
-    - Baptiste
+    - Lifeweaver
+    - Zenyatta
+    - Illari
+    - Emre
     - Mizuki
-credit: "The Hydra List"
+    - D.Mon
 last_tested: 12/08/26
-short_name: "Casting abilities while stunned"
-on_hydra: true
+short_name: "Casting abilities while stunned by punch"
+on_hydra: partly
+credit: "The Hydra List"
 ---
-
-Credit for most of the interaction is with The Hydra List.
 
 When Doomfist hits anyone with his Rocket Punch, all abilities that the hit character was casting are instantly canceled. This is intuitive. If you hit a Mercy who is trying to resurrect someone - the resurrect is canceled. Simple as. However, some abilities are unable to be canceled, even though they should be.
 
 The list includes:
-Winston (Melee in Primal), Soldier: 76 (Biotic Field), Baptiste (Regenerative Burst & Exo Boots), Mizuki (Ultimate).
+Winston (Melee in Primal), Echo (Cancel Flight), Hanzo (Cancel Storm Arrows), Hazard (Cancel Jagged Wall), Soldier: 76 (Biotic Field), Baptiste (Regenerative Burst & Exo Boots), Lifeweaver (Cancel Tree), Zenyatta (Orb of Destruction Alt Fire), Illari (Cancel Pylon), Emre (Cancel Siphon Blaster), Mizuki (Ultimate), D.Mon (Cancel Fusion Repeater).

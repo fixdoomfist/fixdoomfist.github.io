@@ -1,5 +1,5 @@
 ---
-ability_rank: 9
+ability_rank: 8
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfists-rocket-punch-allows-targets-to-move-before-stun/999438
 credit: The Hydra List
 heroes: All heroes
@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/move-in-stun/
 short_name: You can jump in stun lmao
-total_rank: 16
+total_rank: 15
 youtube_link: https://youtu.be/kPQxkAHY8f0
 ---
 

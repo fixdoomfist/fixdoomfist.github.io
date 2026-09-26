@@ -13,7 +13,13 @@ portrait: "/assets/images/heroes/Hanzo.png"
     {% assign bug_count = bug_count | plus: 1 %}
     <div class="separator"><span><b>{{bug_count}}</b></span></div>
         <div class='bug_card'>
-            <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            {% if bug.path contains '_bugs/intended/' %}
+                <a href="{{bug.permalink}}"><h2>[INTENDED] {{bug.short_name}}</h2></a>
+            {% elsif bug.path contains '_bugs/unsolved' %}
+                <a href="{{bug.permalink}}"><h2>[UNSOLVED] {{bug.short_name}}</h2></a>
+            {% else %}
+                <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+            {% endif %}
             <p>{{bug.content | markdownify}}</p>
         </div>
     {% endif %}

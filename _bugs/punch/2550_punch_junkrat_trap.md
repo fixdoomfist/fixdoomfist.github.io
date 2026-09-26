@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/junkrat-trap/
 short_name: Empowered punch goes thourgh Junkrat trap
-total_rank: 26
+total_rank: 27
 youtube_link: https://youtu.be/tSowm7u8TmE
 ---
 

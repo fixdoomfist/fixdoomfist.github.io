@@ -14,7 +14,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/slam/on-platforms/
 short_name: Slam no-regs on rising platforms
-total_rank: 20
+total_rank: 19
 youtube_link:
 - https://youtu.be/u0qwxd5KP5w
 - https://youtu.be/QQ81BkzoAwI

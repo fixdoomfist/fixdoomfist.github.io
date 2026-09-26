@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/slam/punch-override/
 short_name: Slam overrides punch knockback
-total_rank: 25
+total_rank: 26
 youtube_link: https://youtu.be/ngexJf_BJMY
 ---
 

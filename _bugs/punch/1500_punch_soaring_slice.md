@@ -1,5 +1,5 @@
 ---
-ability_rank: 8
+ability_rank: 7
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-is-unable-to-cancel-vendettas-soaring-slice/993288
 credit: Goose
 heroes: Vendetta
@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/soaring-slice/
 short_name: Punch unable to cancel Vendetta soar
-total_rank: 15
+total_rank: 14
 youtube_link: https://youtu.be/A1Ff4j2_pOg
 ---
 

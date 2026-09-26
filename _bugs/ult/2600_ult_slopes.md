@@ -1,5 +1,5 @@
 ---
-ability_rank: 2
+ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-is-unable-to-go-over-some-slopes-in-meteor-strike/991316
 credit: The Hydra List
 heroes: Doomfist
@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/ult/slopes/
 short_name: Slowdown when moving up stairs in ult
-total_rank: 27
+total_rank: 28
 youtube_link: https://youtu.be/7xBk6NUwx2E
 ---
 

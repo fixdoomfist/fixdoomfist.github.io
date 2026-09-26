@@ -14,7 +14,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/block/emp-reset/
 short_name: Punch cooldown not resetting
-total_rank: 24
+total_rank: 25
 youtube_link: https://youtu.be/cLZVs5a_h7I
 ---
 
