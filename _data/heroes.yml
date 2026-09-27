@@ -37,7 +37,7 @@
 - name: Doomfist
   portrait: /assets/images/heroes/Doomfist.png
   role: tank
-  bug_count: 10
+  bug_count: 11
 - name: D.Va
   portrait: /assets/images/heroes/D.Va.png
   role: tank
