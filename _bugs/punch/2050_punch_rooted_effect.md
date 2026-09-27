@@ -11,7 +11,7 @@ id: '2050'
 layout: bug_wiki
 on_hydra: partly
 permalink: /bugs/punch/rooted-effect/
-short_name: Punch removes stun
+short_name: No wall hits a.k.a. the rooted effect
 total_rank: 21
 youtube_link: https://youtu.be/5Zs8g_FeSYA
 ---

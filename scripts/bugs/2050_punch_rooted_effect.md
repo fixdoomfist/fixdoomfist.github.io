@@ -6,7 +6,7 @@ heroes:
     - Junkrat
     - Junkrat
 credit: The Hydra List
-short_name: "Punch removes stun"
+short_name: "No wall hits a.k.a. the rooted effect"
 on_hydra: partly
 ---
 

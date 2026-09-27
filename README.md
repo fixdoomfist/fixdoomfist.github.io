@@ -9,9 +9,10 @@ All the hero and bug pages are generated automatically using my own script in /s
 
 # TODO
 
-1. unreported bugs:
+1. add reproduction steps to each bug
+2. unreported bugs:
     1. leap slam on stairs lead to airslam (waiting for feedback from creme)
-2. unsolved bugs:
+3. unsolved bugs:
     1. punch pushing ppl when cancelled
     2. some knockbacks overriding punch knockbacks
     3. wide hitbox during punch (?)
