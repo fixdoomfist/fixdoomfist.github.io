@@ -109,7 +109,7 @@ img[data-set-theme] {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
     .columns > *:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         justify-self: center;
