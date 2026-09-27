@@ -90,7 +90,7 @@ img[data-set-theme] {
     cursor: pointer;
 }
 
-@media (max-width: 10000px) {
+@media (hover: none) and (pointer: coarse), (max-width: 1000px) {
     html, body {
         overflow-x: hidden;
         overflow-y: auto;
@@ -109,7 +109,7 @@ img[data-set-theme] {
     }
 }
 
-@media (min-width: 10000px) {
+@media (min-width: 1001px) {
     .columns > *:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         justify-self: center;

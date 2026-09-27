@@ -82,7 +82,7 @@ body {
     filter: blur(10px) opacity(30%) invert(1);
 }
 
-@media (max-width: 900px) {
+@media (hover: none) and (pointer: coarse), (max-width: 1000px) {
     .side-image {
         max-width: 25vw;
     }
