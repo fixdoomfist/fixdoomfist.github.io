@@ -15,7 +15,6 @@ root_dir = Path(__file__).resolve().parent.parent
 data_yaml = []
 hero_names = []
 files = sorted(glob.glob(f"{root_dir}/scripts/bugs/*"), key=lambda x: int(''.join(filter(str.isdigit, x)) or 0))  # im so fr idk what this does and i dont remember writing this. if it works it works ig
-unique_bug_count = len(files)
 total_bug_count = 0
 print("Connecting to overfast-api...")
 response = requests.get("https://overfast-api.tekrop.fr/heroes")
@@ -176,6 +175,8 @@ for file in files:
         else:
             print(file, fr'{root_dir}/_bugs/{bugged_ability}/{file_name}')
             raise "Category does not have a dir in _bugs"
+
+unique_bug_count = count_dict['total']
 
 print("Calculating absurd bug counts...")
 
