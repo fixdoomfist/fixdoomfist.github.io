@@ -21,4 +21,5 @@ All the hero and bug pages are generated automatically using my own script in /s
 # Credits
 
 Big thanks to TeKrop for making overfast-api. My script uses it to automatically get up-to-date information about Overwatch heroes, including their portraits. Their Github: https://github.com/TeKrop/overfast-api
+
 Font used: https://rubjo.github.io/victor-mono/

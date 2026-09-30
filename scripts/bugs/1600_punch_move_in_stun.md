@@ -11,3 +11,9 @@ on_hydra: true
 When Doomfist hits a target with Rocket Punch, all abilities and all momentum are supposed to be cancelled out. However, this is just not the case. Heroes are able to move, jump and move their camera before being stunned.
 
 While you technically can use any WASD inputs, the only actually viable one is the jump button. Other ones do basically nothing.
+
+<!-- SPLIT -->
+
+1. As Doomfist, hit an enemy with Rocket Punch so that they hit a wall.
+2. As the punched enemy, repeatedly press the jump button while being punched.
+3. Observe how the enemy jumps while still being stunned.

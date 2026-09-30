@@ -30,3 +30,11 @@ Freja's Updraft moves her up as well as backwards.
 Ashe's Coach Gun moves her up as well as backwards. This issue is easier reproduced when walking in the opposite direction of the Doomfist charging punch.
 
 ~~Baptiste's Rocket Boots are able to almost completely override the momentum of an Empowered Punch.~~ Issue no longer tracked as it seems to be unreplicatable.
+
+<!-- SPLIT -->
+
+Freja Updraft example:
+
+1. As Doomfist, start charging Rocket Punch while facing Freja.
+2. As Freja, use Updraft a split second before getting hit with Rocket Punch.
+3. Observe how Freja moves diagonally backwards, appearing to combine both Updraft and Rocket Punch knockback.

@@ -12,3 +12,10 @@ on_hydra: true
 ---
 
 Since Freja was released, Doomfist has not been able to consistently block Freja's bolt explosion damage. This behavior differs from all other "stick" interactions, such as Echo bombs or Tracer's ultimate, as the game blocks the damage regardless of where exactly Doomfist is hit.
+
+<!-- SPLIT -->
+
+1. As Freja, shoot at the blocking Doomfist directly into his gauntlet.
+2. Observe as the damage is blocked.
+3. Try shooting at different ligaments of the blocking Doomfist.
+4. Observe as the damage is sometimes blocked and sometimes not blocked.

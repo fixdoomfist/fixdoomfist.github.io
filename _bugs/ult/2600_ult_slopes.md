@@ -17,3 +17,12 @@ youtube_link: https://youtu.be/7xBk6NUwx2E
 Doomfist is unable to go over some elevated floors, even though they can be walked over without jumping.
 
 Many of these situations can be avoided by approaching the obstacle at an narrow angle or using a top-down view, but there is a particularly annoying doorway in King's Row with this exact issue, to the extent that it has its own separate entry in the bug list.
+
+<!-- SPLIT -->
+
+King's Row "DOOR STUCK" example:
+
+1. As Doomfist, on the map King's Row, move to the third point.
+2. Next to the last right turn, to the left, there is a small room with a staircase.
+3. Use Meteor Strike and try to enter that room.
+4. Observe how Doomfist gets stuck.

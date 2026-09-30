@@ -15,3 +15,10 @@ youtube_link: https://youtu.be/8_BuOFEq6Sc
 ---
 
 When Doomfist is in his ultimate and is not using the top-down view, he is drastically slowed down when going up any significantly angled surfaces.
+
+<!-- SPLIT -->
+
+1. As Doomfist, locate a staircase.
+2. Use Meteor Strike and, without using top-down view, move up the staircase.
+3. Move back down, and go up the staircase again using top-down view.
+4. Observe how Doomfist moves up the stairs slower without using top-down view.

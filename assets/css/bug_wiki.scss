@@ -79,6 +79,10 @@ iframe {
     aspect-ratio: 16 / 9;
 }
 
+iframe:last-child {
+    padding-bottom: 1rem;
+}
+
 .title_div {
     display: flex;
     text-align: center;
@@ -96,6 +100,10 @@ iframe {
 
 li {
     list-style-position: inside;
+}
+
+ol:not(.steps) {
+    padding-left: 0;
 }
 
 a {

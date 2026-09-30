@@ -11,3 +11,7 @@ on_hydra: true
 This is honestly a nonissue and is more funny than serious.
 
 After a specific set of inputs, Doomfist’s camera bugs out and starts clipping into the ground if there is a roof above you. My best attempt at giving reproduction steps is shown in the video below. This is immediately fixed once you crouch or slam again.
+
+<!-- SPLIT -->
+
+Reproductions steps for this bug are too complex; it is recommended to fully watch the linked YouTube video.

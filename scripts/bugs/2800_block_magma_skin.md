@@ -10,3 +10,9 @@ on_hydra: false
 ---
 
 When blocking, the usual “block flash” for the Doomfist mythic skin is just way too bright. It hurts the eye and could be extremely harmful towards people with light sensitivity.
+
+<!-- SPLIT -->
+
+1. As Doomfist, use the Magma Titan mythic skin with custom VFX turned on.
+2. Block.
+3. Buy a cool cane because you are now blind.

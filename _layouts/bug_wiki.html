@@ -12,8 +12,18 @@
     <body>
         <div class="wiki-box">
             <div class="title_div"><h1><span class="title">{{page.short_name}}</span></h1></div>
-            <div class="separator-first"><h3>Summary</h3></div>
-            {{ content }}
+            {% if content contains '<!-- SPLIT -->' %}
+                {% assign parts = content | split: '<!-- SPLIT -->' %}
+                <div class="separator-first"><h3>Summary</h3></div>
+                {{ parts[0] }}
+                <div class="separator"><h3>Reproduction Steps</h3></div>
+                <div class="steps">
+                    {{ parts[1] }}
+                </div>
+            {% else %}
+                <div class="separator-first"><h3>Summary</h3><div>
+                {{ content }}
+            {% endif %}
             <div class="separator"><h3>Stats</h3></div>
             {% assign heroes = page.heroes | uniq %}
             {% assign reports = page.bug_report %}

@@ -19,3 +19,11 @@ I believe the issue is specifically caused by any applied horizontal movement (s
 The melee affects the acceleration of Rocket Punch up to the maximum speed value. When punched right before using Rocket Punch, it is noticeably slower, as demonstrated by the video.
 
 This behavior is also shown when using Rocket Punch immediately after Venture's Drill Dash, which pushes Doomfist into the ground. Again, for some reason, horizontal knockback with no verticality affects the acceleration.
+
+<!-- SPLIT -->
+
+1. As Doomfist, start charging Rocket Punch in any direction.
+2. Cast the ability and mark the spot where the Doomfist has reached.
+3. Now start charging Rocket Punch from the same exact spot in the same direction.
+4. As an enemy, stand next to the Doomfist and hit him with a melee right as he starts to cast his ability.
+5. Observe how the Doomfist has covered less distance compared to the first cast.

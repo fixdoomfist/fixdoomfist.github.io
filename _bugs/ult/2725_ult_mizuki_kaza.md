@@ -13,4 +13,10 @@ total_rank: 30
 youtube_link: https://youtu.be/bu9eQS6CkAE
 ---
 
-If Mizuki throws Healing Kaza towards a Doomfist and, once it begins flying towards him, the Doomfist player ults, the hat gets sucked into the ceiling before for a while before returning. Should probably ~~return instantly~~ never return.
+If Mizuki throws Healing Kaza towards a Doomfist and, once it begins flying towards him, the Doomfist player ults, the hat gets sucked into the ceiling before for a while before returning. Logically, it should ~~never return~~ return instantly.
+
+<!-- SPLIT -->
+
+1. As Mizuki, throw Healing Kaza towards a Doomfist.
+2. As Doomfist, as soon as the Healing Kaza starts flying towards you, use Meteor Strike.
+3. Observe as the hat goes flying into the sky.

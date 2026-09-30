@@ -21,3 +21,12 @@ youtube_link: https://youtu.be/cLZVs5a_h7I
 Thanks to `itztonii` for providing a fresh clip with the replay code.
 
 This bug has been a mystery for some time, but it turns out that it can be easily replicated. When you receive empowered punch (i.e., the charge bar overfills due to damage) from an ability that stuns you (i.e., Sigma's rock or Orisa's javelin), and hold down the Rocket Punch button simultaneously, once you get stunned, Rocket Punch goes on cooldown instead of being reset.
+
+Confirmed stun abilities list: Ana's Sleep Dart, Orisa's Energy Javelin, Reinhardt's Earthshatter, Sigma's Accretion.
+
+<!-- SPLIT -->
+
+1. As Doomfist, start blocking and have the "block meter" be almost filled.
+2. Start holding the Rocket Punch button (default: RMB).
+3. Get hit with Sigma's Accretion while still blocking and holding the button.
+4. Observe how Doomfist's Rocket Punch is on full cooldown rather than being reset.
