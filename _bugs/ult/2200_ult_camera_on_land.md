@@ -24,6 +24,15 @@ As of 12/07/26, this camera issue also affects moving targets with complex geome
 
 <!-- SPLIT -->
 
+Normal camera lock:
+
 1. As Doomfist, use Meteor Strike.
 2. Position yourself so that you land directly on an edge of any platform.
 3. Observe how, when Doomfist lands, he is forced to look forward.
+
+Payload camera lock:
+
+1. As Doomfist, use Meteor Strike.
+2. Position yourself so that you land directly on a moving Rialto payload.
+3. Move your camera during the landing animation.
+4. Observe how the camera snaps and locks in place multiple times during the animation.

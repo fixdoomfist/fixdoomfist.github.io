@@ -9,17 +9,12 @@ All the hero and bug pages are generated automatically using my own script in /s
 
 # TODO
 
-1. add reproduction steps to each bug
-2. unreported bugs:
+1. unreported bugs:
     1. leap slam on stairs lead to airslam (waiting for feedback from creme)
-3. unsolved bugs:
-    1. punch pushing ppl when cancelled
-    2. some knockbacks overriding punch knockbacks
-    3. wide hitbox during punch (?)
-    4. that one bap perk thing where he cancels punch momentum
 
 # Credits
 
 Big thanks to TeKrop for making overfast-api. My script uses it to automatically get up-to-date information about Overwatch heroes, including their portraits. Their Github: https://github.com/TeKrop/overfast-api
+
 
 Font used: https://rubjo.github.io/victor-mono/
