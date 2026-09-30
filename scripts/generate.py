@@ -183,7 +183,7 @@ print("Calculating absurd bug counts...")
 jump_in_stun_count = hero_count - 1  # jetpack cat cannot jump
 melee_stagger_count = hero_count - 3  # brig and rein dont have melee, and zen melee doesn't reproduce the bug
 stair_spot_count = 62 * hero_count  # if i counted correctly, there are 62 known stair spots. every hero (afaik) can connect with them. so.... yea a lot of bugs
-absurd_bug_count = unique_bug_count + jump_in_stun_count + melee_stagger_count
+absurd_bug_count = total_bug_count + jump_in_stun_count + melee_stagger_count
 ridiculous_bug_count = absurd_bug_count + stair_spot_count
 
 print("Writing bug data...")
