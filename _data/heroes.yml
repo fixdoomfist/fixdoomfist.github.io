@@ -113,7 +113,7 @@
 - name: Mizuki
   portrait: /assets/images/heroes/Mizuki.png
   role: support
-  bug_count: 2
+  bug_count: 1
 - name: Moira
   portrait: /assets/images/heroes/Moira.png
   role: support

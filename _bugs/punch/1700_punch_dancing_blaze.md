@@ -9,7 +9,7 @@ last_tested: 12/08/26
 layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/dancing-blaze/
-short_name: The rooted effect and it's consequences
+short_name: No punch kncokback after Dancing Blaze
 total_rank: 17
 youtube_link: https://youtu.be/TtX_F4ewYV8
 ---

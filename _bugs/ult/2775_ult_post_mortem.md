@@ -1,5 +1,5 @@
 ---
-ability_rank: 7
+ability_rank: 6
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-can-ult-after-death-visual-bug/1040931
 credit: Goose
 heroes: Doomfist
@@ -9,7 +9,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/ult/post-mortem/
 short_name: Post mortem ult
-total_rank: 32
+total_rank: 31
 youtube_link: https://youtu.be/-oh-70vIlFQ
 ---
 

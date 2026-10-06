@@ -8,7 +8,7 @@ permalink: /faq/
 
 # When were the bugs last tested?
 
-No date since the bugs have not been tested since the release of the website.
+The website is up-to-date as of 06/10/2026. All the bugs have been confirmed on the S5 release patch.
 
 # Why?
 

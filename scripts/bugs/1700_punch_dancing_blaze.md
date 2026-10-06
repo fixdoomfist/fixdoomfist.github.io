@@ -4,7 +4,7 @@ bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-cannot-knockb
 heroes: Anran
 credit: Goose
 last_tested: 12/08/26
-short_name: "The rooted effect and it's consequences"
+short_name: "No punch kncokback after Dancing Blaze"
 on_hydra: true
 ---
 
