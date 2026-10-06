@@ -20,9 +20,14 @@ print("Connecting to overfast-api...")
 response = requests.get("https://overfast-api.tekrop.fr/heroes")
 print("Connected.")
 download_status = input("Redownload hero portraits? (yes/no) ")
+doctorine = input("Doctorine? (yes/no) ")
 
 if response.status_code == 200:
     data = response.json()
+    if doctorine.lower() == "yes":
+        doctorine_response = requests.get("https://overfast-api.tekrop.fr/heroes/doctrine")
+        doctorine_data = doctorine_response.json()
+        data.append(doctorine_data)
     hero_count = len(data)
     for hero in data:
         print(f"Gathering data: {hero['name']}")

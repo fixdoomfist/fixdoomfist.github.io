@@ -210,3 +210,7 @@
   portrait: /assets/images/heroes/Zenyatta.png
   role: support
   bug_count: 0
+- name: Doctrine
+  portrait: /assets/images/heroes/Doctrine.png
+  role: support
+  bug_count: 0

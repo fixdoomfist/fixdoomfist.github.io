@@ -5,7 +5,7 @@ bug_report:
 - https://us.forums.blizzard.com/en/overwatch/t/doomfist-rocket-punch-knockback-stops-on-invisible-walls/1029263
 credit: Goose
 heroes: All heroes
-heroes_affected: 53
+heroes_affected: 54
 id: '1650'
 last_tested: 12/08/26
 layout: bug_wiki

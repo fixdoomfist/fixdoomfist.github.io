@@ -3,7 +3,7 @@ ability_rank: 2
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-rocket-punch-acceleration-gets-staggered-by-melee/1017899
 credit: Goose
 heroes: All heroes
-heroes_affected: 53
+heroes_affected: 54
 id: '0500'
 last_tested: 12/08/26
 layout: bug_wiki
