@@ -11,7 +11,23 @@
     </head>
     <body>
         <div class="wiki-box">
-            {{ content }}
+            {% assign bug_count = 0 %}
+            {% for bug in site.bugs %}
+                {% if bug.heroes contains page.name %}
+                {% assign bug_count = bug_count | plus: 1 %}
+                <div class="separator"><span><b>{{bug_count}}</b></span></div>
+                    <div class='bug_card'>
+                        {% if bug.path contains '_bugs/intended/' %}
+                            <a href="{{bug.permalink}}"><h2>[INTENDED] {{bug.short_name}}</h2></a>
+                        {% elsif bug.path contains '_bugs/unsolved' %}
+                            <a href="{{bug.permalink}}"><h2>[UNSOLVED] {{bug.short_name}}</h2></a>
+                        {% else %}
+                            <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
+                        {% endif %}
+                        <div class="bug_text">{{bug.content | split: "<!-- SPLIT -->" | first | markdownify | truncatewords: 50}}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </body>
 </html>

@@ -47,7 +47,7 @@ print(f"Rebuilding hero pages...")
 for hero in data_yaml:
     filename = f"{root_dir}/_heroes/{hero['name']}.html"
     
-    # messy? yes. works? without a hitch
+    # nvm now that i have more experience i realized how terrible this was. no longer messy
     page = \
 f"""---
 layout: hero_bugs
@@ -56,25 +56,7 @@ permalink: "/heroes/{hero['name']}/"
 name: "{hero['name']}"
 role: "{hero['role']}"
 portrait: "{hero['portrait']}"
----""" + """
-
-{% assign bug_count = 0 %}
-{% for bug in site.bugs %}
-    {% if bug.heroes contains page.name %}
-    {% assign bug_count = bug_count | plus: 1 %}
-    <div class="separator"><span><b>{{bug_count}}</b></span></div>
-        <div class='bug_card'>
-            {% if bug.path contains '_bugs/intended/' %}
-                <a href="{{bug.permalink}}"><h2>[INTENDED] {{bug.short_name}}</h2></a>
-            {% elsif bug.path contains '_bugs/unsolved' %}
-                <a href="{{bug.permalink}}"><h2>[UNSOLVED] {{bug.short_name}}</h2></a>
-            {% else %}
-                <a href="{{bug.permalink}}"><h2>{{bug.short_name}}</h2></a>
-            {% endif %}
-            <p>{{bug.content | markdownify}}</p>
-        </div>
-    {% endif %}
-{% endfor %}"""
+---"""
 
     for file in files:
         bug = open(file, "r").read()

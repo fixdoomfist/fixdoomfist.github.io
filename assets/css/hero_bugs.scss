@@ -4,76 +4,76 @@
 @import "style";
 
 body {
-  margin: 0;
-  padding-top: 1rem;
-  background: linear-gradient(90deg, $color-background-dt 0%, $color-foreground-dt 9%, $color-foreground-dt 91%, $color-background-dt 100%);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+    margin: 0;
+    padding-top: 1rem;
+    background: linear-gradient(90deg, $color-background-dt 0%, $color-foreground-dt 9%, $color-foreground-dt 91%, $color-background-dt 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
 .wiki-box {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 80%;
 }
 
 h1, h2, h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover h2 {
-  color: $color-text-red;
+    color: $color-text-red;
 }
 
 .bug_card {
-  background-color: $color-foreground-dt;
-  border-radius: 4px;
-  padding-bottom: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  color: $color-text-dt;
+    background-color: $color-foreground-dt;
+    border-radius: 4px;
+    padding-bottom: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: $color-text-dt;
 }
 
 .bug_card h2 {
-  margin-top: 0;
-  text-align: center;
+    margin-top: 0;
+    text-align: center;
 }
 
 .bug_card p {
-  text-align: center;
-  white-space: pre-wrap;
-  margin: 0 0 0.5rem 0;
+    text-align: center;
+    white-space: pre-wrap;
+    margin: 0 0 0.5rem 0;
 }
 
 .separator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .separator::before,
 .separator::after {
-  content: '';
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(to right, transparent 0%, $color-background-dt 50%);
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent 0%, $color-background-dt 50%);
 }
 
 .separator::after {
-  background: linear-gradient(to left, transparent 0%, $color-background-dt 50%);
+    background: linear-gradient(to left, transparent 0%, $color-background-dt 50%);
 }
 
 .separator span {
-  height: 1.5rem;
-  padding: 0 0.5rem;
-  color: $color-text-dt;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    color: $color-text-dt;
 }
 
 .accent {

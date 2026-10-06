@@ -4,32 +4,32 @@
 @import "style";
 
 body {
-  background: linear-gradient(90deg, $color-foreground-dt 0%, $color-background-dt 14%, $color-background-dt 86%, $color-foreground-dt 100%);
+    background: linear-gradient(90deg, $color-foreground-dt 0%, $color-background-dt 14%, $color-background-dt 86%, $color-foreground-dt 100%);
 }
 
 .hero-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 0.5rem;
-  max-width: 75%;
-  margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 0.5rem;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .hero-card {
-  position: relative;
-  border-bottom: 0.2rem solid $color-foreground-dt;
-  border-top: 0.2rem solid $color-foreground-dt;
-  border-left: 0.4rem solid $color-foreground-dt;
-  border-right: 0.4rem solid $color-foreground-dt;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-decoration: none;
-  font-family: sans-serif;
-  color: black;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border-bottom: 0.2rem solid $color-foreground-dt;
+    border-top: 0.2rem solid $color-foreground-dt;
+    border-left: 0.4rem solid $color-foreground-dt;
+    border-right: 0.4rem solid $color-foreground-dt;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-card:active {
@@ -37,30 +37,30 @@ body {
 }
 
 .hero-image {
-  border-top: 0.2rem solid $color-foreground-dt;
-  border-bottom: 0.2rem solid $color-foreground-dt;
-  width: 100%;
-  height: 5.5rem;
-  background-size: cover;
-  background-position: center;
-  display: block;
+    border-top: 0.2rem solid $color-foreground-dt;
+    border-bottom: 0.2rem solid $color-foreground-dt;
+    width: 100%;
+    height: 5.5rem;
+    background-size: cover;
+    background-position: center;
+    display: block;
 }
 
 .card-text {
-  background-color: $color-foreground-dt;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
+    background-color: $color-foreground-dt;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .text {
-  color: $color-text-dt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 1.25rem;
-  outline: none;
+    color: $color-text-dt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    outline: none;
 }
