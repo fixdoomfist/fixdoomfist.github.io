@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/soaring-slice/
 short_name: Punch unable to cancel Vendetta soar
-total_rank: 14
+total_rank: 15
 youtube_link: https://youtu.be/A1Ff4j2_pOg
 ---
 

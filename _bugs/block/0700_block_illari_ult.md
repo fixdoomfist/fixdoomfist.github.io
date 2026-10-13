@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/block/illari-ult/
 short_name: Unblockable Illari ult
-total_rank: 6
+total_rank: 7
 youtube_link: https://youtu.be/IDVSBzKArts
 ---
 

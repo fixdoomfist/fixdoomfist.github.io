@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/block/vendetta-edge/
 short_name: Unblockable Vendetta projectile
-total_rank: 7
+total_rank: 8
 youtube_link: https://youtu.be/6sXgvQ7AosM
 ---
 

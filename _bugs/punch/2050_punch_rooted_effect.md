@@ -12,7 +12,7 @@ layout: bug_wiki
 on_hydra: partly
 permalink: /bugs/punch/rooted-effect/
 short_name: No wall hits a.k.a. the rooted effect
-total_rank: 21
+total_rank: 22
 youtube_link: https://youtu.be/5Zs8g_FeSYA
 ---
 

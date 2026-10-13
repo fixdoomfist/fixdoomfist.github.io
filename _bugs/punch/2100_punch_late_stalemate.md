@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/late-stalemate/
 short_name: Punch cancel late stalemate
-total_rank: 22
+total_rank: 23
 youtube_link: https://youtu.be/kElUpeX3Yvk
 ---
 

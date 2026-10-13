@@ -12,7 +12,7 @@ layout: bug_wiki
 on_hydra: partly
 permalink: /bugs/ult/camera-on-land/
 short_name: Camera lock on landing in ult
-total_rank: 23
+total_rank: 24
 youtube_link:
 - https://youtu.be/A-6GGfKoTRs
 - https://youtu.be/XRC1dDkTfa8

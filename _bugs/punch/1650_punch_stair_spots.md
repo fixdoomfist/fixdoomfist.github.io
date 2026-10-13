@@ -12,7 +12,7 @@ layout: bug_wiki
 on_hydra: partly
 permalink: /bugs/punch/stair-spots/
 short_name: Invisible walls a.k.a. stair spots
-total_rank: 16
+total_rank: 17
 youtube_link:
 - https://youtu.be/RKFzPN0k6dY
 - https://youtu.be/jnonHlOC7aA

@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/move-in-stun/
 short_name: You can jump in stun lmao
-total_rank: 15
+total_rank: 16
 youtube_link: https://youtu.be/kPQxkAHY8f0
 ---
 

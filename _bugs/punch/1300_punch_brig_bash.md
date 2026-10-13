@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/punch/brig-bash/
 short_name: Brig bash late stalemate
-total_rank: 12
+total_rank: 13
 youtube_link: https://youtu.be/6RJNTK5u7JY
 ---
 

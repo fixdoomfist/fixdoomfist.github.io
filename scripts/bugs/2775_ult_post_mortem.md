@@ -11,6 +11,8 @@ Doomfist cannot die while in Meteor Strike. This is, thankfully, not bugged. How
 
 This is purely a visual issue, but some players consider this bug to be incredibly annoying and send a lot of clips of it occurring. Yes, I'm talking about you, 307.
 
+Note: There is a bug where Doomfist can get hit and even be stunned out of Meteor Strike, but, as of now, it is unreplicated and only shown in the "unsolved" section of the website.
+
 <!-- SPLIT -->
 
 1. As Doomfist, die.

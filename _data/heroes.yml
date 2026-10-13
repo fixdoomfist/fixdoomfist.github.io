@@ -30,6 +30,10 @@
   portrait: /assets/images/heroes/D.Mon.png
   role: tank
   bug_count: 0
+- name: Doctrine
+  portrait: /assets/images/heroes/Doctrine.png
+  role: support
+  bug_count: 0
 - name: Domina
   portrait: /assets/images/heroes/Domina.png
   role: tank
@@ -37,7 +41,7 @@
 - name: Doomfist
   portrait: /assets/images/heroes/Doomfist.png
   role: tank
-  bug_count: 11
+  bug_count: 14
 - name: D.Va
   portrait: /assets/images/heroes/D.Va.png
   role: tank
@@ -164,7 +168,7 @@
   bug_count: 0
 - name: Sombra
   portrait: /assets/images/heroes/Sombra.png
-  role: damage
+  role: support
   bug_count: 0
 - name: Symmetra
   portrait: /assets/images/heroes/Symmetra.png
@@ -208,9 +212,5 @@
   bug_count: 1
 - name: Zenyatta
   portrait: /assets/images/heroes/Zenyatta.png
-  role: support
-  bug_count: 0
-- name: Doctrine
-  portrait: /assets/images/heroes/Doctrine.png
   role: support
   bug_count: 0

@@ -16,7 +16,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/momentum-override/
 short_name: Movement abilities override Punch knockback
-total_rank: 9
+total_rank: 10
 youtube_link:
 - https://youtu.be/Q1SljoO8KAM
 - https://youtu.be/GnDciOLXoIE

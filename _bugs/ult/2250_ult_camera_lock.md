@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: true
 permalink: /bugs/ult/camera-lock/
 short_name: Camera lock on ulting
-total_rank: 24
+total_rank: 25
 youtube_link: https://youtu.be/PxiNnbP38Is
 ---
 

@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/domina-stun/
 short_name: Domina stun lasts through punch
-total_rank: 8
+total_rank: 9
 youtube_link: https://youtu.be/HolRuwi9fOo
 ---
 

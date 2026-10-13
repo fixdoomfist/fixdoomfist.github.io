@@ -1,5 +1,5 @@
 ---
-ability_rank: 2
+ability_rank: 3
 bug_report: https://us.forums.blizzard.com/en/overwatch/t/doomfist-slam-overrides-momentum-of-some-stuns/1038164
 credit: Goose
 heroes:
@@ -11,7 +11,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/slam/momentum-override/
 short_name: Slam overrides some abilities momentum
-total_rank: 13
+total_rank: 14
 youtube_link: https://youtu.be/02S1dSlon1o
 ---
 

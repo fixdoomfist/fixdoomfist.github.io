@@ -10,7 +10,7 @@ layout: bug_wiki
 on_hydra: false
 permalink: /bugs/punch/anchor-drone/
 short_name: Invulnerable Sierra drone
-total_rank: 11
+total_rank: 12
 youtube_link: https://youtu.be/10n279T6PlM
 ---
 
