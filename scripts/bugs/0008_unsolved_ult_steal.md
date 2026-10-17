@@ -11,7 +11,7 @@ short_name: "Doomfist being stunned in ult"
 on_hydra: false
 ---
 
-This ~~singular clip~~ ~~TWO instances~~ THREE DIFFERENT SIGHTINGS has been driving me insane. This bug gives me anxiety, I hate it, it is literally my mortal enemy sent to me by God as a test of my endurance.
+This ~~singular clip~~ ~~TWO instances~~ THREE DIFFERENT SIGHTINGS have been driving me insane. This bug gives me anxiety, I hate it, it is literally my mortal enemy sent to me by God as a test of my endurance.
 
 Over the course of the last 8 months, I probably spent close to 15 hours actively testing the bug and double that just thinking about it on late nights trying to sleep.
 

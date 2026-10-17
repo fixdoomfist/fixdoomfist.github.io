@@ -67,7 +67,11 @@
                                     {% if bug.heroes contains "All heroes" %}
                                         <h3 class="left"><span class="accent">ALL</span> heroes can apply</h3>
                                     {% else %}
-                                        <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                        {% if bug.heroes.first != nil %}
+                                            <h3 class="left"><span class="accent">{{bug.heroes | first}}</span> only</h3>
+                                        {% else %}
+                                            <h3 class="left"><span class="accent">{{bug.heroes}}</span> only</h3>
+                                        {% endif %}
                                     {% endif %}
                                 {% endif %}
                                 <h3 class="center">Source: <span class="accent">{{bug.credit}}</span></h3>
