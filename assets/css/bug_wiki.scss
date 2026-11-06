@@ -12,11 +12,6 @@ body {
     font-size: 1.1rem;
 }
 
-.wiki-box {
-    width: 100%;
-    max-width: 80%;
-}
-
 .separator {
     position: relative;
     height: 1px;
@@ -119,4 +114,18 @@ a:hover {
 .accent {
     color: $color-text-red;
     font-weight: bold;
+}
+
+@media (hover: none) and (pointer: coarse), (max-width: 1000px) {
+    .wiki-box {
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .wiki-box {
+        width: 100%;
+        max-width: 80%;
+    }
 }
