@@ -7,6 +7,12 @@ AI was and is used to help with website styling and some components of Jekyll, a
 # Structure
 All the hero and bug pages are generated automatically using my own script in /scripts/. To add a bug you add it to the folder /scritps/bugs/ with all the necessary information and run the script. It should be (ID)\_(CATEGORY)\_(NAME).md, with ID being how gamebreaking it is (the higher the more).
 
+# TODO
+
+1. intended bugs:
+    1. punch movement override
+    2. no punch LOS checks between targets
+
 # Credits
 
 Big thanks to TeKrop for making overfast-api. My script uses it to automatically get up-to-date information about Overwatch heroes, including their portraits. Their Github: https://github.com/TeKrop/overfast-api
