@@ -7,7 +7,9 @@ import shutil
 import random
 import textwrap
 import requests
+import subprocess
 from pathlib import Path
+from datetime import datetime
 
 # Please dont judge this code. I compensate my lack of jekyll/liquid/yaml experience with python. I need this.
 
@@ -197,5 +199,106 @@ $abilities: punch, block, slam, ult;"""
 
 with open(fr'{root_dir}/_sass/stats.scss', 'w+') as f:
     f.write(bug_sass_data)
+
+# generate changelog in _changelog. only do before commits
+generate_changelog = input("Generate changelog? (yes/no) ")
+if generate_changelog.lower() == "yes":
+    bugs = files
+    fixed = glob.glob(f"{root_dir}/scripts/fixed_bugs/*")
+    deleted = glob.glob(f"{root_dir}/scripts/archive/*")
+
+    # check upstream for new files
+    upstream_bugs = subprocess.run(["git", "ls-tree", "--name-only", "origin/main", "--", rf"{root_dir}/scripts/bugs/"], capture_output=True, text=True)
+    upstream_bugs_list = [fr"{root_dir}/scripts/{x}" for x in upstream_bugs.stdout.split("\n") if x]
+    upstream_fixed = subprocess.run(["git", "ls-tree", "--name-only", "origin/main", "--", rf"{root_dir}/scripts/fixed_bugs/"], capture_output=True, text=True)
+    upstream_fixed_list = [fr"{root_dir}/scripts/{x}" for x in upstream_bugs.stdout.split("\n") if x]
+    upstream_deleted = subprocess.run(["git", "ls-tree", "--name-only", "origin/main", "--", rf"{root_dir}/scripts/archive/"], capture_output=True, text=True)
+    upstream_deleted_list = [fr"{root_dir}/scripts/{x}" for x in upstream_bugs.stdout.split("\n") if x]
+
+    # compare
+    new_files = list(set(bugs) - set(upstream_bugs_list))
+    removed_files = list(set(upstream_bugs_list) - set(bugs))
+
+    fixed_bugs = list(set(fixed) - set(upstream_fixed_list))
+    deleted_bugs = list(set(deleted) - set(upstream_deleted_list))
+
+    renamed_files = {x: y for x in new_files for y in removed_files if x.split("/")[-1].split("_")[1:] == y.split("/")[-1].split("_")[1:]}
+
+    fixed_final = [y for x in removed_files for y in fixed_bugs if x.split("/")[-1].split("_")[1:] == y.split("/")[-1].split("_")[1:]]
+    new_files_final = [x for x in new_files if x not in renamed_files.keys()]
+    deleted_files_final = [y for x in removed_files for y in deleted_bugs if x.split("/")[-1].split("_")[1:] == y.split("/")[-1].split("_")[1:]]
+
+    print("Files fixed: ", fixed_final)
+    print("Files added: ", new_files_final)
+    print("Files deleted: ", deleted_files_final)
+    print("Files renamed: ", renamed_files)  # for now unused, just in case
+
+    time = datetime.now().strftime("%d_%m_%y")
+
+    # make the changelog file template
+    changelog = ""
+    first = True
+    if fixed_final:
+        first = False
+        changelog += "Fixed bugs:"
+        for fix in fixed_final:
+            with open(fix, "r") as f:
+                bug = f.read()
+                bug_text = bug.split('---')
+                yaml_data = yaml.safe_load(bug_text[1])
+                name = yaml_data["short_name"]
+                changelog += f"\n- {name}"
+    if new_files_final:
+        if not first:
+            changelog += "\n\n"
+        first = False
+        changelog += "Added bugs:"
+        for add in new_files_final:
+            with open(add, "r") as f:
+                bug = f.read()
+                bug_text = bug.split('---')
+                yaml_data = yaml.safe_load(bug_text[1])
+                name = yaml_data["short_name"]
+                file_split = add.split('/')
+                file_name = file_split[-1]
+                file_tags = file_name.split('_')
+                file_id = file_tags[0]
+                permalink_path_md = '-'.join(file_tags[2:])
+                permalink_final = permalink_path_md.split(".")[0]
+                changelog += f"\n- [{name}]({fr"/bugs/{file_tags[1]}/{permalink_final}/"})"
+    if deleted_files_final:
+        if not first:
+            changelog += "\n\n"
+        first = False
+        changelog += "Removed bugs:"
+        for dlt in deleted_files_final:
+            with open(dlt, "r") as f:
+                bug = f.read()
+                bug_text = bug.split('---')
+                yaml_data = yaml.safe_load(bug_text[1])
+                name = yaml_data["short_name"]
+                file_split = dlt.split('/')
+                file_name = file_split[-1]
+                file_tags = file_name.split('_')
+                file_id = file_tags[0]
+                permalink_path_md = '-'.join(file_tags[2:])
+                permalink_final = permalink_path_md.split(".")[0]
+                changelog += f"\n- {name}"
+
+
+    # write n shi
+    if changelog:
+        file_name = fr"{root_dir}/_changelog/{time}"
+        if Path(file_name).exists():
+            count = 1
+            while Path(file_name).exists():
+                count += 1
+                file_name = fr"{root_dir}/_changelog/{time}_{count}"
+        with open(file_name, "w+") as f:
+            f.write(changelog)
+
+        print(f"Changelog template written as {file_name}")
+    else:
+        print("Derek Pope - Nothing Changed")
 
 print("Done!")
